@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEC795391DAD86B100FD67B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC795381DAD86B100FD67B5 /* AppDelegate.swift */; };
+		BEC7953B1DAD86B100FD67B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7953A1DAD86B100FD67B5 /* ViewController.swift */; };
+		BEC7953E1DAD86B100FD67B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC7953C1DAD86B100FD67B5 /* Main.storyboard */; };
+		BEC795401DAD86B100FD67B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC7953F1DAD86B100FD67B5 /* Assets.xcassets */; };
+		BEC795431DAD86B100FD67B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC795411DAD86B100FD67B5 /* LaunchScreen.storyboard */; };
+		BEC7954E1DAD86B100FD67B5 /* MotopulseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7954D1DAD86B100FD67B5 /* MotopulseTests.swift */; };
+		BEC795591DAD86B100FD67B5 /* MotopulseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC795581DAD86B100FD67B5 /* MotopulseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEC7954A1DAD86B100FD67B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEC7952D1DAD86B100FD67B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEC795341DAD86B100FD67B5;
+			remoteInfo = Motopulse;
+		};
+		BEC795551DAD86B100FD67B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEC7952D1DAD86B100FD67B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEC795341DAD86B100FD67B5;
+			remoteInfo = Motopulse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEC795351DAD86B100FD67B5 /* Motopulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motopulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC795381DAD86B100FD67B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEC7953A1DAD86B100FD67B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEC7953D1DAD86B100FD67B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEC7953F1DAD86B100FD67B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC795421DAD86B100FD67B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEC795441DAD86B100FD67B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC795491DAD86B100FD67B5 /* MotopulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotopulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC7954D1DAD86B100FD67B5 /* MotopulseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotopulseTests.swift; sourceTree = "<group>"; };
+		BEC7954F1DAD86B100FD67B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC795541DAD86B100FD67B5 /* MotopulseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotopulseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC795581DAD86B100FD67B5 /* MotopulseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotopulseUITests.swift; sourceTree = "<group>"; };
+		BEC7955A1DAD86B100FD67B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEC795321DAD86B100FD67B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC795461DAD86B100FD67B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC795511DAD86B100FD67B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEC7952C1DAD86B100FD67B5 = {
+			isa = PBXGroup;
+			children = (
+				BEC795371DAD86B100FD67B5 /* Motopulse */,
+				BEC7954C1DAD86B100FD67B5 /* MotopulseTests */,
+				BEC795571DAD86B100FD67B5 /* MotopulseUITests */,
+				BEC795361DAD86B100FD67B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEC795361DAD86B100FD67B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEC795351DAD86B100FD67B5 /* Motopulse.app */,
+				BEC795491DAD86B100FD67B5 /* MotopulseTests.xctest */,
+				BEC795541DAD86B100FD67B5 /* MotopulseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEC795371DAD86B100FD67B5 /* Motopulse */ = {
+			isa = PBXGroup;
+			children = (
+				BEC795381DAD86B100FD67B5 /* AppDelegate.swift */,
+				BEC7953A1DAD86B100FD67B5 /* ViewController.swift */,
+				BEC7953C1DAD86B100FD67B5 /* Main.storyboard */,
+				BEC7953F1DAD86B100FD67B5 /* Assets.xcassets */,
+				BEC795411DAD86B100FD67B5 /* LaunchScreen.storyboard */,
+				BEC795441DAD86B100FD67B5 /* Info.plist */,
+			);
+			path = Motopulse;
+			sourceTree = "<group>";
+		};
+		BEC7954C1DAD86B100FD67B5 /* MotopulseTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEC7954D1DAD86B100FD67B5 /* MotopulseTests.swift */,
+				BEC7954F1DAD86B100FD67B5 /* Info.plist */,
+			);
+			path = MotopulseTests;
+			sourceTree = "<group>";
+		};
+		BEC795571DAD86B100FD67B5 /* MotopulseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEC795581DAD86B100FD67B5 /* MotopulseUITests.swift */,
+				BEC7955A1DAD86B100FD67B5 /* Info.plist */,
+			);
+			path = MotopulseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEC795341DAD86B100FD67B5 /* Motopulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC7955D1DAD86B100FD67B5 /* Build configuration list for PBXNativeTarget "Motopulse" */;
+			buildPhases = (
+				BEC795311DAD86B100FD67B5 /* Sources */,
+				BEC795321DAD86B100FD67B5 /* Frameworks */,
+				BEC795331DAD86B100FD67B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Motopulse;
+			productName = Motopulse;
+			productReference = BEC795351DAD86B100FD67B5 /* Motopulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEC795481DAD86B100FD67B5 /* MotopulseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC795601DAD86B100FD67B5 /* Build configuration list for PBXNativeTarget "MotopulseTests" */;
+			buildPhases = (
+				BEC795451DAD86B100FD67B5 /* Sources */,
+				BEC795461DAD86B100FD67B5 /* Frameworks */,
+				BEC795471DAD86B100FD67B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC7954B1DAD86B100FD67B5 /* PBXTargetDependency */,
+			);
+			name = MotopulseTests;
+			productName = MotopulseTests;
+			productReference = BEC795491DAD86B100FD67B5 /* MotopulseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEC795531DAD86B100FD67B5 /* MotopulseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC795631DAD86B100FD67B5 /* Build configuration list for PBXNativeTarget "MotopulseUITests" */;
+			buildPhases = (
+				BEC795501DAD86B100FD67B5 /* Sources */,
+				BEC795511DAD86B100FD67B5 /* Frameworks */,
+				BEC795521DAD86B100FD67B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC795561DAD86B100FD67B5 /* PBXTargetDependency */,
+			);
+			name = MotopulseUITests;
+			productName = MotopulseUITests;
+			productReference = BEC795541DAD86B100FD67B5 /* MotopulseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEC7952D1DAD86B100FD67B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Cher Chronis";
+				TargetAttributes = {
+					BEC795341DAD86B100FD67B5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					BEC795481DAD86B100FD67B5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEC795341DAD86B100FD67B5;
+					};
+					BEC795531DAD86B100FD67B5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEC795341DAD86B100FD67B5;
+					};
+				};
+			};
+			buildConfigurationList = BEC795301DAD86B100FD67B5 /* Build configuration list for PBXProject "Motopulse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEC7952C1DAD86B100FD67B5;
+			productRefGroup = BEC795361DAD86B100FD67B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEC795341DAD86B100FD67B5 /* Motopulse */,
+				BEC795481DAD86B100FD67B5 /* MotopulseTests */,
+				BEC795531DAD86B100FD67B5 /* MotopulseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEC795331DAD86B100FD67B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC795431DAD86B100FD67B5 /* LaunchScreen.storyboard in Resources */,
+				BEC795401DAD86B100FD67B5 /* Assets.xcassets in Resources */,
+				BEC7953E1DAD86B100FD67B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC795471DAD86B100FD67B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC795521DAD86B100FD67B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEC795311DAD86B100FD67B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC7953B1DAD86B100FD67B5 /* ViewController.swift in Sources */,
+				BEC795391DAD86B100FD67B5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC795451DAD86B100FD67B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC7954E1DAD86B100FD67B5 /* MotopulseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC795501DAD86B100FD67B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC795591DAD86B100FD67B5 /* MotopulseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEC7954B1DAD86B100FD67B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEC795341DAD86B100FD67B5 /* Motopulse */;
+			targetProxy = BEC7954A1DAD86B100FD67B5 /* PBXContainerItemProxy */;
+		};
+		BEC795561DAD86B100FD67B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEC795341DAD86B100FD67B5 /* Motopulse */;
+			targetProxy = BEC795551DAD86B100FD67B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEC7953C1DAD86B100FD67B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC7953D1DAD86B100FD67B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEC795411DAD86B100FD67B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC795421DAD86B100FD67B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEC7955B1DAD86B100FD67B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEC7955C1DAD86B100FD67B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEC7955E1DAD86B100FD67B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Motopulse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darkhorse.Motopulse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BEC7955F1DAD86B100FD67B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Motopulse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darkhorse.Motopulse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BEC795611DAD86B100FD67B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MotopulseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darkhorse.MotopulseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motopulse.app/Motopulse";
+			};
+			name = Debug;
+		};
+		BEC795621DAD86B100FD67B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MotopulseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darkhorse.MotopulseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motopulse.app/Motopulse";
+			};
+			name = Release;
+		};
+		BEC795641DAD86B100FD67B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MotopulseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darkhorse.MotopulseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Motopulse;
+			};
+			name = Debug;
+		};
+		BEC795651DAD86B100FD67B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MotopulseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darkhorse.MotopulseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Motopulse;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEC795301DAD86B100FD67B5 /* Build configuration list for PBXProject "Motopulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC7955B1DAD86B100FD67B5 /* Debug */,
+				BEC7955C1DAD86B100FD67B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC7955D1DAD86B100FD67B5 /* Build configuration list for PBXNativeTarget "Motopulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC7955E1DAD86B100FD67B5 /* Debug */,
+				BEC7955F1DAD86B100FD67B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEC795601DAD86B100FD67B5 /* Build configuration list for PBXNativeTarget "MotopulseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC795611DAD86B100FD67B5 /* Debug */,
+				BEC795621DAD86B100FD67B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEC795631DAD86B100FD67B5 /* Build configuration list for PBXNativeTarget "MotopulseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC795641DAD86B100FD67B5 /* Debug */,
+				BEC795651DAD86B100FD67B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEC7952D1DAD86B100FD67B5 /* Project object */;
+}
