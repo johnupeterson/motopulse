@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEAF10CB1DAEF9FB008F1FFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10CA1DAEF9FB008F1FFC /* main.m */; };
+		BEAF10CE1DAEF9FB008F1FFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10CD1DAEF9FB008F1FFC /* AppDelegate.m */; };
+		BEAF10D11DAEF9FB008F1FFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10D01DAEF9FB008F1FFC /* ViewController.m */; };
+		BEAF10D41DAEF9FB008F1FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAF10D21DAEF9FB008F1FFC /* Main.storyboard */; };
+		BEAF10D61DAEF9FB008F1FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAF10D51DAEF9FB008F1FFC /* Assets.xcassets */; };
+		BEAF10D91DAEF9FB008F1FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAF10D71DAEF9FB008F1FFC /* LaunchScreen.storyboard */; };
+		BEAF10E41DAEF9FB008F1FFC /* Motopulse_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10E31DAEF9FB008F1FFC /* Motopulse_MobileTests.m */; };
+		BEAF10EF1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10EE1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEAF10E01DAEF9FB008F1FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAF10BE1DAEF9FA008F1FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAF10C51DAEF9FA008F1FFC;
+			remoteInfo = "Motopulse Mobile";
+		};
+		BEAF10EB1DAEF9FB008F1FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAF10BE1DAEF9FA008F1FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAF10C51DAEF9FA008F1FFC;
+			remoteInfo = "Motopulse Mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEAF10C61DAEF9FB008F1FFC /* Motopulse Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motopulse Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAF10CA1DAEF9FB008F1FFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEAF10CC1DAEF9FB008F1FFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEAF10CD1DAEF9FB008F1FFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEAF10CF1DAEF9FB008F1FFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEAF10D01DAEF9FB008F1FFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEAF10D31DAEF9FB008F1FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEAF10D51DAEF9FB008F1FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEAF10D81DAEF9FB008F1FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEAF10DA1DAEF9FB008F1FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAF10DF1DAEF9FB008F1FFC /* Motopulse MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Motopulse MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAF10E31DAEF9FB008F1FFC /* Motopulse_MobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Motopulse_MobileTests.m; sourceTree = "<group>"; };
+		BEAF10E51DAEF9FB008F1FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAF10EA1DAEF9FB008F1FFC /* Motopulse MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Motopulse MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAF10EE1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Motopulse_MobileUITests.m; sourceTree = "<group>"; };
+		BEAF10F01DAEF9FB008F1FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEAF10C31DAEF9FA008F1FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAF10DC1DAEF9FB008F1FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAF10E71DAEF9FB008F1FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEAF10BD1DAEF9FA008F1FFC = {
+			isa = PBXGroup;
+			children = (
+				BEAF10C81DAEF9FB008F1FFC /* Motopulse Mobile */,
+				BEAF10E21DAEF9FB008F1FFC /* Motopulse MobileTests */,
+				BEAF10ED1DAEF9FB008F1FFC /* Motopulse MobileUITests */,
+				BEAF10C71DAEF9FB008F1FFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAF10C71DAEF9FB008F1FFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF10C61DAEF9FB008F1FFC /* Motopulse Mobile.app */,
+				BEAF10DF1DAEF9FB008F1FFC /* Motopulse MobileTests.xctest */,
+				BEAF10EA1DAEF9FB008F1FFC /* Motopulse MobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEAF10C81DAEF9FB008F1FFC /* Motopulse Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF10CC1DAEF9FB008F1FFC /* AppDelegate.h */,
+				BEAF10CD1DAEF9FB008F1FFC /* AppDelegate.m */,
+				BEAF10CF1DAEF9FB008F1FFC /* ViewController.h */,
+				BEAF10D01DAEF9FB008F1FFC /* ViewController.m */,
+				BEAF10D21DAEF9FB008F1FFC /* Main.storyboard */,
+				BEAF10D51DAEF9FB008F1FFC /* Assets.xcassets */,
+				BEAF10D71DAEF9FB008F1FFC /* LaunchScreen.storyboard */,
+				BEAF10DA1DAEF9FB008F1FFC /* Info.plist */,
+				BEAF10C91DAEF9FB008F1FFC /* Supporting Files */,
+			);
+			path = "Motopulse Mobile";
+			sourceTree = "<group>";
+		};
+		BEAF10C91DAEF9FB008F1FFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF10CA1DAEF9FB008F1FFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEAF10E21DAEF9FB008F1FFC /* Motopulse MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF10E31DAEF9FB008F1FFC /* Motopulse_MobileTests.m */,
+				BEAF10E51DAEF9FB008F1FFC /* Info.plist */,
+			);
+			path = "Motopulse MobileTests";
+			sourceTree = "<group>";
+		};
+		BEAF10ED1DAEF9FB008F1FFC /* Motopulse MobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF10EE1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m */,
+				BEAF10F01DAEF9FB008F1FFC /* Info.plist */,
+			);
+			path = "Motopulse MobileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEAF10C51DAEF9FA008F1FFC /* Motopulse Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAF10F31DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse Mobile" */;
+			buildPhases = (
+				BEAF10C21DAEF9FA008F1FFC /* Sources */,
+				BEAF10C31DAEF9FA008F1FFC /* Frameworks */,
+				BEAF10C41DAEF9FA008F1FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Motopulse Mobile";
+			productName = "Motopulse Mobile";
+			productReference = BEAF10C61DAEF9FB008F1FFC /* Motopulse Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEAF10DE1DAEF9FB008F1FFC /* Motopulse MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAF10F61DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse MobileTests" */;
+			buildPhases = (
+				BEAF10DB1DAEF9FB008F1FFC /* Sources */,
+				BEAF10DC1DAEF9FB008F1FFC /* Frameworks */,
+				BEAF10DD1DAEF9FB008F1FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAF10E11DAEF9FB008F1FFC /* PBXTargetDependency */,
+			);
+			name = "Motopulse MobileTests";
+			productName = "Motopulse MobileTests";
+			productReference = BEAF10DF1DAEF9FB008F1FFC /* Motopulse MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEAF10E91DAEF9FB008F1FFC /* Motopulse MobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAF10F91DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse MobileUITests" */;
+			buildPhases = (
+				BEAF10E61DAEF9FB008F1FFC /* Sources */,
+				BEAF10E71DAEF9FB008F1FFC /* Frameworks */,
+				BEAF10E81DAEF9FB008F1FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAF10EC1DAEF9FB008F1FFC /* PBXTargetDependency */,
+			);
+			name = "Motopulse MobileUITests";
+			productName = "Motopulse MobileUITests";
+			productReference = BEAF10EA1DAEF9FB008F1FFC /* Motopulse MobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEAF10BE1DAEF9FA008F1FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Darkhorse Technology";
+				TargetAttributes = {
+					BEAF10C51DAEF9FA008F1FFC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					BEAF10DE1DAEF9FB008F1FFC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEAF10C51DAEF9FA008F1FFC;
+					};
+					BEAF10E91DAEF9FB008F1FFC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEAF10C51DAEF9FA008F1FFC;
+					};
+				};
+			};
+			buildConfigurationList = BEAF10C11DAEF9FA008F1FFC /* Build configuration list for PBXProject "Motopulse Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEAF10BD1DAEF9FA008F1FFC;
+			productRefGroup = BEAF10C71DAEF9FB008F1FFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEAF10C51DAEF9FA008F1FFC /* Motopulse Mobile */,
+				BEAF10DE1DAEF9FB008F1FFC /* Motopulse MobileTests */,
+				BEAF10E91DAEF9FB008F1FFC /* Motopulse MobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEAF10C41DAEF9FA008F1FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAF10D91DAEF9FB008F1FFC /* LaunchScreen.storyboard in Resources */,
+				BEAF10D61DAEF9FB008F1FFC /* Assets.xcassets in Resources */,
+				BEAF10D41DAEF9FB008F1FFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAF10DD1DAEF9FB008F1FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAF10E81DAEF9FB008F1FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEAF10C21DAEF9FA008F1FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAF10D11DAEF9FB008F1FFC /* ViewController.m in Sources */,
+				BEAF10CE1DAEF9FB008F1FFC /* AppDelegate.m in Sources */,
+				BEAF10CB1DAEF9FB008F1FFC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAF10DB1DAEF9FB008F1FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAF10E41DAEF9FB008F1FFC /* Motopulse_MobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAF10E61DAEF9FB008F1FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAF10EF1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEAF10E11DAEF9FB008F1FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAF10C51DAEF9FA008F1FFC /* Motopulse Mobile */;
+			targetProxy = BEAF10E01DAEF9FB008F1FFC /* PBXContainerItemProxy */;
+		};
+		BEAF10EC1DAEF9FB008F1FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAF10C51DAEF9FA008F1FFC /* Motopulse Mobile */;
+			targetProxy = BEAF10EB1DAEF9FB008F1FFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEAF10D21DAEF9FB008F1FFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAF10D31DAEF9FB008F1FFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEAF10D71DAEF9FB008F1FFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAF10D81DAEF9FB008F1FFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEAF10F11DAEF9FB008F1FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEAF10F21DAEF9FB008F1FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAF10F41DAEF9FB008F1FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Motopulse Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEAF10F51DAEF9FB008F1FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Motopulse Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BEAF10F71DAEF9FB008F1FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Motopulse MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motopulse Mobile.app/Motopulse Mobile";
+			};
+			name = Debug;
+		};
+		BEAF10F81DAEF9FB008F1FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Motopulse MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motopulse Mobile.app/Motopulse Mobile";
+			};
+			name = Release;
+		};
+		BEAF10FA1DAEF9FB008F1FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Motopulse MobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Motopulse Mobile";
+			};
+			name = Debug;
+		};
+		BEAF10FB1DAEF9FB008F1FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Motopulse MobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Motopulse Mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEAF10C11DAEF9FA008F1FFC /* Build configuration list for PBXProject "Motopulse Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAF10F11DAEF9FB008F1FFC /* Debug */,
+				BEAF10F21DAEF9FB008F1FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAF10F31DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAF10F41DAEF9FB008F1FFC /* Debug */,
+				BEAF10F51DAEF9FB008F1FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEAF10F61DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAF10F71DAEF9FB008F1FFC /* Debug */,
+				BEAF10F81DAEF9FB008F1FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEAF10F91DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse MobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAF10FA1DAEF9FB008F1FFC /* Debug */,
+				BEAF10FB1DAEF9FB008F1FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEAF10BE1DAEF9FA008F1FFC /* Project object */;
+}
