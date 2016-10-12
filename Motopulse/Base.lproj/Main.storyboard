@@ -108,7 +108,6 @@
         <!--Table View Controller-->
         <scene sceneID="SEH-RS-2Fw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="byp-NI-xww" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="UUD-wK-7hm" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ozo-U3-179">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -195,10 +194,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyJ-sA-dVK">
-                                                    <rect key="frame" x="15" y="5" width="90" height="30"/>
+                                                    <rect key="frame" x="15" y="4" width="137" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
-                                                    <state key="normal" title="Bike Locator">
+                                                    <state key="normal" title="Send Bike Location">
                                                         <color key="titleColor" red="0.22175365686416626" green="0.60155349969863892" blue="0.92250007390975952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                 </button>
@@ -336,6 +335,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byp-NI-xww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-628" y="37"/>
         </scene>
