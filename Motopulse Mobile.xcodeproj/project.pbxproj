@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					BEAF10C51DAEF9FA008F1FFC = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = GG45PT3UKW;
 						ProvisioningStyle = Automatic;
 					};
 					BEAF10DE1DAEF9FB008F1FFC = {
@@ -424,7 +425,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GG45PT3UKW;
 				INFOPLIST_FILE = "Motopulse Mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +438,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GG45PT3UKW;
 				INFOPLIST_FILE = "Motopulse Mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "darkhorse.Motopulse-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +512,7 @@
 				BEAF10F51DAEF9FB008F1FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEAF10F61DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse MobileTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +521,7 @@
 				BEAF10F81DAEF9FB008F1FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEAF10F91DAEF9FB008F1FFC /* Build configuration list for PBXNativeTarget "Motopulse MobileUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +530,7 @@
 				BEAF10FB1DAEF9FB008F1FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
