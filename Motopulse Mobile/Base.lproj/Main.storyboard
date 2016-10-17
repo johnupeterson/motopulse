@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Remote Control-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="menu_sb" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menu_sb" title="Remote Control" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="-234" y="-212"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="UwF-Ob-o4o">
             <objects>
-                <viewController id="acq-Mb-HzR" sceneMemberID="viewController">
+                <viewController title="Settings" id="acq-Mb-HzR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fvK-kT-0hN"/>
                         <viewControllerLayoutGuide type="bottom" id="Xfc-Xl-mOl"/>
@@ -312,10 +312,10 @@
             </objects>
             <point key="canvasLocation" x="-234" y="468"/>
         </scene>
-        <!--View Controller-->
+        <!--Motion Notifications-->
         <scene sceneID="bbq-1f-1RB">
             <objects>
-                <viewController storyboardIdentifier="motion_notification_sb" id="hr9-ib-qSV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="motion_notification_sb" title="Motion Notifications" id="hr9-ib-qSV" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wBS-aL-htG"/>
                         <viewControllerLayoutGuide type="bottom" id="Y4Z-yX-Hqr"/>
@@ -387,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="1577" y="1157"/>
         </scene>
-        <!--View Controller-->
+        <!--Security Access Code-->
         <scene sceneID="kyi-Lc-S93">
             <objects>
-                <viewController id="C8O-4O-GmR" sceneMemberID="viewController">
+                <viewController title="Security Access Code" id="C8O-4O-GmR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2bb-kC-c0d"/>
                         <viewControllerLayoutGuide type="bottom" id="glo-vg-gf5"/>
@@ -437,10 +437,10 @@
             </objects>
             <point key="canvasLocation" x="-668" y="1157"/>
         </scene>
-        <!--View Controller-->
+        <!--Device Owner Name-->
         <scene sceneID="0et-Ur-pbI">
             <objects>
-                <viewController id="IuC-2k-UiQ" sceneMemberID="viewController">
+                <viewController title="Device Owner Name" id="IuC-2k-UiQ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pWz-fc-ypG"/>
                         <viewControllerLayoutGuide type="bottom" id="AMj-EA-GMk"/>
@@ -497,10 +497,10 @@
             </objects>
             <point key="canvasLocation" x="-669.375" y="1875"/>
         </scene>
-        <!--View Controller-->
+        <!--Device Owner Email-->
         <scene sceneID="hUV-Jc-xgS">
             <objects>
-                <viewController id="Den-gm-LaM" sceneMemberID="viewController">
+                <viewController title="Device Owner Email" id="Den-gm-LaM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zhi-4M-8Gf"/>
                         <viewControllerLayoutGuide type="bottom" id="bTn-YY-zEc"/>
@@ -557,10 +557,10 @@
             </objects>
             <point key="canvasLocation" x="68" y="1876"/>
         </scene>
-        <!--View Controller-->
+        <!--Device Owner Phone-->
         <scene sceneID="TP0-hN-dq4">
             <objects>
-                <viewController id="LHf-og-9Kb" sceneMemberID="viewController">
+                <viewController title="Device Owner Phone" id="LHf-og-9Kb" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8j8-7a-v8k"/>
                         <viewControllerLayoutGuide type="bottom" id="tam-4i-Ezj"/>
@@ -617,10 +617,10 @@
             </objects>
             <point key="canvasLocation" x="765" y="1874"/>
         </scene>
-        <!--View Controller-->
+        <!--Device ID-->
         <scene sceneID="Mio-rR-Yor">
             <objects>
-                <viewController id="str-aR-qTj" sceneMemberID="viewController">
+                <viewController title="Device ID" id="str-aR-qTj" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AN3-j3-VDj"/>
                         <viewControllerLayoutGuide type="bottom" id="I7x-z4-Hkd"/>
@@ -674,10 +674,10 @@
             </objects>
             <point key="canvasLocation" x="1466" y="1872"/>
         </scene>
-        <!--View Controller-->
+        <!--Account Information-->
         <scene sceneID="C26-WH-4kO">
             <objects>
-                <viewController id="hcf-IG-kdH" sceneMemberID="viewController">
+                <viewController title="Account Information" id="hcf-IG-kdH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eDN-tu-Y4x"/>
                         <viewControllerLayoutGuide type="bottom" id="ZB2-fl-Yhd"/>
@@ -836,10 +836,10 @@
             </objects>
             <point key="canvasLocation" x="67.5" y="1156.6901408450703"/>
         </scene>
-        <!--View Controller-->
+        <!--Crash Notifications-->
         <scene sceneID="eLw-BT-Bef">
             <objects>
-                <viewController storyboardIdentifier="crash_notification_sb" id="u4M-kj-Q4N" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="crash_notification_sb" title="Crash Notifications" id="u4M-kj-Q4N" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ghv-iw-Off"/>
                         <viewControllerLayoutGuide type="bottom" id="63w-6E-xz2"/>
@@ -952,10 +952,10 @@
             </objects>
             <point key="canvasLocation" x="-2899" y="821"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard-->
         <scene sceneID="dfl-1o-bMD">
             <objects>
-                <viewController id="JGm-TY-CoK" sceneMemberID="viewController">
+                <viewController title="Dashboard" id="JGm-TY-CoK" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aIp-Mo-o3D"/>
                         <viewControllerLayoutGuide type="bottom" id="BLf-OC-Z6P"/>
@@ -1006,8 +1006,8 @@
         <image name="next-gray.png" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UAs-ah-zLI"/>
-        <segue reference="Ljf-Ra-Dh9"/>
-        <segue reference="b6T-XS-C0F"/>
+        <segue reference="vgD-0G-Hyf"/>
+        <segue reference="q9g-AH-g21"/>
+        <segue reference="vSU-xs-heg"/>
     </inferredMetricsTieBreakers>
 </document>
