@@ -15,15 +15,10 @@
 		BEAF10D91DAEF9FB008F1FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAF10D71DAEF9FB008F1FFC /* LaunchScreen.storyboard */; };
 		BEAF10E41DAEF9FB008F1FFC /* Motopulse_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10E31DAEF9FB008F1FFC /* Motopulse_MobileTests.m */; };
 		BEAF10EF1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10EE1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m */; };
-		BEAF10FD1DB14EFD008F1FFC /* motopulse_splashlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF10FC1DB14EFD008F1FFC /* motopulse_splashlogo.png */; };
-		BEAF10FF1DB14F88008F1FFC /* motopulse_splashlogo_300.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF10FE1DB14F88008F1FFC /* motopulse_splashlogo_300.png */; };
-		BEAF11011DB15C8B008F1FFC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11001DB15C8B008F1FFC /* back.png */; };
-		BEAF11031DB17B96008F1FFC /* smartphone-1.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11021DB17B96008F1FFC /* smartphone-1.png */; };
-		BEAF11051DB17C24008F1FFC /* home-1.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11041DB17C24008F1FFC /* home-1.png */; };
-		BEAF11071DB17F70008F1FFC /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11061DB17F70008F1FFC /* settings.png */; };
 		BEAF11091DB194C1008F1FFC /* next-1.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11081DB194C1008F1FFC /* next-1.png */; };
 		BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF110A1DB1974A008F1FFC /* next-gray.png */; };
 		BEAF11111DB199D6008F1FFC /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11101DB199D6008F1FFC /* line.png */; };
+		BEAF11151DB44694008F1FFC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11141DB44694008F1FFC /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,15 +55,10 @@
 		BEAF10EA1DAEF9FB008F1FFC /* Motopulse MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Motopulse MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAF10EE1DAEF9FB008F1FFC /* Motopulse_MobileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Motopulse_MobileUITests.m; sourceTree = "<group>"; };
 		BEAF10F01DAEF9FB008F1FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEAF10FC1DB14EFD008F1FFC /* motopulse_splashlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = motopulse_splashlogo.png; path = ../../../../../motopulse_splashlogo.png; sourceTree = "<group>"; };
-		BEAF10FE1DB14F88008F1FFC /* motopulse_splashlogo_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = motopulse_splashlogo_300.png; path = ../../../../../motopulse_splashlogo_300.png; sourceTree = "<group>"; };
-		BEAF11001DB15C8B008F1FFC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = "../../../../../../Downloads/126466-multimedia-collection/png/back.png"; sourceTree = "<group>"; };
-		BEAF11021DB17B96008F1FFC /* smartphone-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smartphone-1.png"; path = "../../../../../../Downloads/149086-essential-set/png/smartphone-1.png"; sourceTree = "<group>"; };
-		BEAF11041DB17C24008F1FFC /* home-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-1.png"; path = "../../../../../../Downloads/149086-essential-set/png/home-1.png"; sourceTree = "<group>"; };
-		BEAF11061DB17F70008F1FFC /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = "../../../../../../Downloads/126466-multimedia-collection/png/settings.png"; sourceTree = "<group>"; };
 		BEAF11081DB194C1008F1FFC /* next-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "next-1.png"; path = "../../../icons/next-1.png"; sourceTree = "<group>"; };
 		BEAF110A1DB1974A008F1FFC /* next-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "next-gray.png"; path = "../../../icons/next-gray.png"; sourceTree = "<group>"; };
 		BEAF11101DB199D6008F1FFC /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = ../../../icons/line.png; sourceTree = "<group>"; };
+		BEAF11141DB44694008F1FFC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../icons/back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,15 +125,10 @@
 		BEAF10C91DAEF9FB008F1FFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEAF11141DB44694008F1FFC /* back.png */,
 				BEAF11101DB199D6008F1FFC /* line.png */,
 				BEAF110A1DB1974A008F1FFC /* next-gray.png */,
 				BEAF11081DB194C1008F1FFC /* next-1.png */,
-				BEAF11061DB17F70008F1FFC /* settings.png */,
-				BEAF11041DB17C24008F1FFC /* home-1.png */,
-				BEAF11021DB17B96008F1FFC /* smartphone-1.png */,
-				BEAF11001DB15C8B008F1FFC /* back.png */,
-				BEAF10FE1DB14F88008F1FFC /* motopulse_splashlogo_300.png */,
-				BEAF10FC1DB14EFD008F1FFC /* motopulse_splashlogo.png */,
 				BEAF10CA1DAEF9FB008F1FFC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -275,15 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEAF10D91DAEF9FB008F1FFC /* LaunchScreen.storyboard in Resources */,
-				BEAF11031DB17B96008F1FFC /* smartphone-1.png in Resources */,
 				BEAF10D61DAEF9FB008F1FFC /* Assets.xcassets in Resources */,
 				BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */,
-				BEAF11011DB15C8B008F1FFC /* back.png in Resources */,
 				BEAF11091DB194C1008F1FFC /* next-1.png in Resources */,
-				BEAF11051DB17C24008F1FFC /* home-1.png in Resources */,
-				BEAF10FD1DB14EFD008F1FFC /* motopulse_splashlogo.png in Resources */,
-				BEAF11071DB17F70008F1FFC /* settings.png in Resources */,
-				BEAF10FF1DB14F88008F1FFC /* motopulse_splashlogo_300.png in Resources */,
+				BEAF11151DB44694008F1FFC /* back.png in Resources */,
 				BEAF10D41DAEF9FB008F1FFC /* Main.storyboard in Resources */,
 				BEAF11111DB199D6008F1FFC /* line.png in Resources */,
 			);
