@@ -10,4 +10,7 @@
 #define globals_h
 
 extern NSString *ccid;
+extern NSString *moto_alarm;
+extern NSString *biker_number;
+extern NSString *crash_number;
 #endif /* globals_h */

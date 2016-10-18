@@ -11,8 +11,12 @@
 
 
 @interface device_id ()
+
+@property (weak, nonatomic) IBOutlet UITextField *motion_notification_number;
+@property (weak, nonatomic) IBOutlet UITextField *crash_notification_number;
 @property (weak, nonatomic) IBOutlet UITextField *device_id_form;
-@property (weak, nonatomic) IBOutlet UIButton *device_id_display;
+
+
 
 @end
 
@@ -23,7 +27,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _device_id_form.text = ccid;
-    [self.device_id_display setTitle:ccid forState:UIControlStateNormal];
+    _motion_notification_number.text = biker_number;
+    _crash_notification_number.text = crash_number;
+   
     NSLog(@"CCID: %@",ccid);
 }
 
@@ -65,6 +71,29 @@
 - (IBAction)transmit_settings:(id)sender {
     NSLog(@"Transmiting Settings");
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sent Settings" message:@"Sucessfully Sent Settings To Your Motopulse" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    [alert show];
+}
+- (IBAction)save_motion_number:(id)sender {
+    _motion_notification_number.text = _motion_notification_number.text;
+    biker_number = _motion_notification_number.text;
+    [[NSUserDefaults standardUserDefaults] setObject:biker_number forKey:@"biker_number"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSLog(@"The saved value is: %@",_motion_notification_number.text);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motion Notification" message:@"Motion Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    [alert show];
+    
+}
+- (IBAction)save_crash_number:(id)sender {
+    _crash_notification_number.text = _crash_notification_number.text;
+    crash_number = _crash_notification_number.text;
+    [[NSUserDefaults standardUserDefaults] setObject:crash_number forKey:@"crash_number"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSLog(@"The saved value is: %@",_crash_notification_number.text);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Crash Notification" message:@"Crash Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
     [alert show];
 }
 
