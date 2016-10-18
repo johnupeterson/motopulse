@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "globals.h"
+NSString *ccid;
+NSString *moto_alarm;
+NSString *biker_number;
+NSString *crash_number;
+NSString *security_code;
 
 @interface AppDelegate ()
 
@@ -19,6 +24,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     sleep(3);
+    
+
+    ccid = [[NSUserDefaults standardUserDefaults]
+            stringForKey:@"ccid"];
+    
+    moto_alarm = [[NSUserDefaults standardUserDefaults]
+                  stringForKey:@"moto_alarm"];
+    biker_number = [[NSUserDefaults standardUserDefaults]
+                    stringForKey:@"biker_number"];
+    crash_number = [[NSUserDefaults standardUserDefaults]
+                    stringForKey:@"crash_number"];
+    security_code = [[NSUserDefaults standardUserDefaults]
+                     stringForKey:@"security_code"];
+    
+    NSLog(@"CCID: %@",ccid);
+    NSLog(@"Alarm: %@",moto_alarm);
+    NSLog(@"Biker Number: %@",biker_number);
+    NSLog(@"Crash Number: %@",crash_number);
+    NSLog(@"Security Code: %@",security_code);
     return YES;
 }
 

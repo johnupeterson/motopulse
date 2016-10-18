@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *crash_notification_number;
 @property (weak, nonatomic) IBOutlet UITextField *device_id_form;
 @property (weak, nonatomic) IBOutlet UITextField *security_code_form;
+@property (weak, nonatomic) IBOutlet UIWebView *last_location;
 
 
 
@@ -32,6 +33,9 @@
     _crash_notification_number.text = crash_number;
     _security_code_form.text = security_code;
     NSLog(@"CCID: %@",ccid);
+    NSURL *last_location_url = [NSURL URLWithString:@"http://maps.google.com/?q=37.148700,-121.672425"];
+    NSURLRequest *Request = [NSURLRequest requestWithURL:last_location_url];
+    [_last_location loadRequest:Request];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,7 +62,7 @@
     security_code = _security_code_form.text;
     
     
-    [[NSUserDefaults standardUserDefaults] setObject:ccid forKey:@"security_code"];
+    [[NSUserDefaults standardUserDefaults] setObject:security_code forKey:@"security_code"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     
