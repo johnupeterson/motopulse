@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select one of the following receive alerts." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYA-V1-QJj">
-                                <rect key="frame" x="0.0" y="100" width="320" height="21"/>
+                                <rect key="frame" x="0.0" y="94" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,7 +39,7 @@
                                 <rect key="frame" x="266" y="165" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="onTintColor" red="0.067091740667819977" green="0.8712812066078186" blue="0.21045041084289551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="find_bike:" destination="BYZ-38-t0r" eventType="valueChanged" id="OeF-gP-JbB"/>
                                 </connections>
@@ -98,19 +98,8 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLZ-Du-pX4">
-                                <rect key="frame" x="193" y="507" width="111" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Crash Detection">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="crash_detection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1k-6J-nNm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ls-nR-n3X">
-                                <rect key="frame" x="16" y="507" width="118" height="30"/>
+                                <rect key="frame" x="24" y="122" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Motion Detection">
@@ -150,20 +139,11 @@
                                     <segue destination="JGm-TY-CoK" kind="show" id="Ljf-Ra-Dh9"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uGt-b6-5wF">
-                                <rect key="frame" x="5" y="123" width="310" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Motion Detection"/>
-                                    <segment title="Crash Detection"/>
-                                </segments>
-                                <color key="tintColor" red="0.81176470590000005" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6yp-yp-9mB">
                                 <rect key="frame" x="264" y="315" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="onTintColor" red="0.067091740667819977" green="0.8712812066078186" blue="0.21045041084289551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="record_route:" destination="BYZ-38-t0r" eventType="valueChanged" id="NgW-vo-aD4"/>
                                 </connections>
@@ -188,6 +168,17 @@
                                 <rect key="frame" x="0.0" y="390" width="320" height="1"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLZ-Du-pX4">
+                                <rect key="frame" x="193" y="122" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Crash Detection">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crash_detection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1k-6J-nNm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -199,7 +190,7 @@
         <!--Settings-->
         <scene sceneID="UwF-Ob-o4o">
             <objects>
-                <viewController title="Settings" id="acq-Mb-HzR" sceneMemberID="viewController">
+                <viewController title="Settings" id="acq-Mb-HzR" customClass="device_id" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fvK-kT-0hN"/>
                         <viewControllerLayoutGuide type="bottom" id="Xfc-Xl-mOl"/>
@@ -304,13 +295,24 @@
                                     <segue destination="u4M-kj-Q4N" kind="show" id="fIJ-X9-hsh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh3-0Q-rbb">
+                                <rect key="frame" x="5" y="305" width="308" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Transmit All Settings To Device">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="transmit_settings:" destination="acq-Mb-HzR" eventType="touchUpInside" id="i4K-hx-l0A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7U-0y-B8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234" y="468"/>
+            <point key="canvasLocation" x="-234.375" y="467.95774647887322"/>
         </scene>
         <!--Motion Notifications-->
         <scene sceneID="bbq-1f-1RB">
@@ -555,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sA-2Z-NVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="1876"/>
+            <point key="canvasLocation" x="68" y="1918"/>
         </scene>
         <!--Device Owner Phone-->
         <scene sceneID="TP0-hN-dq4">
@@ -615,12 +617,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZ0-hv-x96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="1874"/>
+            <point key="canvasLocation" x="816" y="1875"/>
         </scene>
         <!--Device ID-->
         <scene sceneID="Mio-rR-Yor">
             <objects>
-                <viewController title="Device ID" id="str-aR-qTj" sceneMemberID="viewController">
+                <viewController title="Device ID" id="str-aR-qTj" customClass="device_id" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AN3-j3-VDj"/>
                         <viewControllerLayoutGuide type="bottom" id="I7x-z4-Hkd"/>
@@ -642,6 +644,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="input_field:" destination="str-aR-qTj" eventType="editingDidEnd" id="vtp-XM-a9d"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAW-Bo-b1u">
                                 <rect key="frame" x="0.0" y="30" width="78" height="24"/>
@@ -665,19 +670,25 @@
                                 <state key="normal" title="Tap to save changes">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="save_device_id:" destination="str-aR-qTj" eventType="touchUpInside" id="TI5-Yh-Ahk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="device_id_form" destination="zdl-V6-kkU" id="Wdv-qC-6uJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDO-Bm-bGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="1872"/>
+            <point key="canvasLocation" x="1549" y="1875"/>
         </scene>
         <!--Account Information-->
         <scene sceneID="C26-WH-4kO">
             <objects>
-                <viewController title="Account Information" id="hcf-IG-kdH" sceneMemberID="viewController">
+                <viewController title="Account Information" id="hcf-IG-kdH" customClass="device_id" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eDN-tu-Y4x"/>
                         <viewControllerLayoutGuide type="bottom" id="ZB2-fl-Yhd"/>
@@ -776,7 +787,7 @@
                                 <rect key="frame" x="159" y="190" width="133" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
-                                <state key="normal" title="1234">
+                                <state key="normal" title="999">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -831,6 +842,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="device_id_display" destination="Dxo-aI-z3D" id="pP7-nq-T8R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="541-vI-jdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -920,7 +934,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E2d-k7-jKR" id="s9J-x8-d8w">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1006,8 +1020,8 @@
         <image name="next-gray.png" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vgD-0G-Hyf"/>
-        <segue reference="q9g-AH-g21"/>
-        <segue reference="vSU-xs-heg"/>
+        <segue reference="qRw-lh-h8m"/>
+        <segue reference="b6T-XS-C0F"/>
+        <segue reference="JCI-GW-skO"/>
     </inferredMetricsTieBreakers>
 </document>

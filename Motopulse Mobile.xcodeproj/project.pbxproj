@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3FC67B81DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */; };
+		A3FC67BB1DB59EE400DDDBE1 /* device_id.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FC67BA1DB59EE400DDDBE1 /* device_id.m */; };
 		BEAF10CB1DAEF9FB008F1FFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10CA1DAEF9FB008F1FFC /* main.m */; };
 		BEAF10CE1DAEF9FB008F1FFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10CD1DAEF9FB008F1FFC /* AppDelegate.m */; };
 		BEAF10D11DAEF9FB008F1FFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10D01DAEF9FB008F1FFC /* ViewController.m */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = motopulse_splashlogo_300.png; sourceTree = "<group>"; };
+		A3FC67B91DB59EE400DDDBE1 /* device_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = device_id.h; path = "Motopulse Mobile/device_id.h"; sourceTree = "<group>"; };
+		A3FC67BA1DB59EE400DDDBE1 /* device_id.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = device_id.m; path = "Motopulse Mobile/device_id.m"; sourceTree = "<group>"; };
+		A3FC67BC1DB5B2EA00DDDBE1 /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = globals.h; path = "Motopulse Mobile/globals.h"; sourceTree = "<group>"; };
 		BEAF10C61DAEF9FB008F1FFC /* Motopulse Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motopulse Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAF10CA1DAEF9FB008F1FFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEAF10CC1DAEF9FB008F1FFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +95,9 @@
 		BEAF10BD1DAEF9FA008F1FFC = {
 			isa = PBXGroup;
 			children = (
+				A3FC67BC1DB5B2EA00DDDBE1 /* globals.h */,
+				A3FC67B91DB59EE400DDDBE1 /* device_id.h */,
+				A3FC67BA1DB59EE400DDDBE1 /* device_id.m */,
 				BEAF10C81DAEF9FB008F1FFC /* Motopulse Mobile */,
 				BEAF10E21DAEF9FB008F1FFC /* Motopulse MobileTests */,
 				BEAF10ED1DAEF9FB008F1FFC /* Motopulse MobileUITests */,
@@ -129,6 +138,7 @@
 				BEAF11101DB199D6008F1FFC /* line.png */,
 				BEAF110A1DB1974A008F1FFC /* next-gray.png */,
 				BEAF11081DB194C1008F1FFC /* next-1.png */,
+				A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */,
 				BEAF10CA1DAEF9FB008F1FFC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -263,6 +273,7 @@
 				BEAF10D61DAEF9FB008F1FFC /* Assets.xcassets in Resources */,
 				BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */,
 				BEAF11091DB194C1008F1FFC /* next-1.png in Resources */,
+				A3FC67B81DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png in Resources */,
 				BEAF11151DB44694008F1FFC /* back.png in Resources */,
 				BEAF10D41DAEF9FB008F1FFC /* Main.storyboard in Resources */,
 				BEAF11111DB199D6008F1FFC /* line.png in Resources */,
@@ -292,6 +303,7 @@
 			files = (
 				BEAF10D11DAEF9FB008F1FFC /* ViewController.m in Sources */,
 				BEAF10CE1DAEF9FB008F1FFC /* AppDelegate.m in Sources */,
+				A3FC67BB1DB59EE400DDDBE1 /* device_id.m in Sources */,
 				BEAF10CB1DAEF9FB008F1FFC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

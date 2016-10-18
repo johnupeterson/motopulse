@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "globals.h"
+
+NSString *ccid;
 
 @interface ViewController ()
 
@@ -17,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    ccid = [[NSUserDefaults standardUserDefaults]
+                            stringForKey:@"ccid"];
+    NSLog(@"CCID: %@",ccid);
 }
 
 
