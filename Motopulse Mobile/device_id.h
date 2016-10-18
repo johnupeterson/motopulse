@@ -1,16 +1,15 @@
 //
-//  ViewController.h
+//  device_id.h
 //  Motopulse Mobile
 //
-//  Created by Cher Chronis on 10/12/16.
+//  Created by John Peterson on 10/17/16.
 //  Copyright © 2016 Darkhorse Technology. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 
-@interface ViewController : UIViewController
+@interface device_id : UIViewController
 
 
 @end
-
