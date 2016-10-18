@@ -13,4 +13,5 @@ extern NSString *ccid;
 extern NSString *moto_alarm;
 extern NSString *biker_number;
 extern NSString *crash_number;
+extern NSString *security_code;
 #endif /* globals_h */

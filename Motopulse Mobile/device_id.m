@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *motion_notification_number;
 @property (weak, nonatomic) IBOutlet UITextField *crash_notification_number;
 @property (weak, nonatomic) IBOutlet UITextField *device_id_form;
+@property (weak, nonatomic) IBOutlet UITextField *security_code_form;
 
 
 
@@ -29,7 +30,7 @@
     _device_id_form.text = ccid;
     _motion_notification_number.text = biker_number;
     _crash_notification_number.text = crash_number;
-   
+    _security_code_form.text = security_code;
     NSLog(@"CCID: %@",ccid);
 }
 
@@ -47,6 +48,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+
+- (IBAction)security_code_action:(id)sender {
+    //Action For Save Button
+    _security_code_form.text = _security_code_form.text;
+    security_code = _security_code_form.text;
+    
+    
+    [[NSUserDefaults standardUserDefaults] setObject:ccid forKey:@"security_code"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
+    
+    NSLog(@"The saved value is: %@",_security_code_form.text);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Security_Code" message:@"Security Code Used To Send Commands To Motopulse Saved." delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    [alert show];
+}
+
+
 
 
 

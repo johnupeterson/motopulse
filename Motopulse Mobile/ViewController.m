@@ -13,6 +13,7 @@ NSString *ccid;
 NSString *moto_alarm;
 NSString *biker_number;
 NSString *crash_number;
+NSString *security_code;
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *alarm_sounder;
@@ -34,10 +35,14 @@ NSString *crash_number;
                   stringForKey:@"biker_number"];
     crash_number = [[NSUserDefaults standardUserDefaults]
                     stringForKey:@"crash_number"];
+    security_code = [[NSUserDefaults standardUserDefaults]
+                    stringForKey:@"security_code"];
+    
     NSLog(@"CCID: %@",ccid);
     NSLog(@"Alarm: %@",moto_alarm);
     NSLog(@"Biker Number: %@",biker_number);
-    NSLog(@"CRash Number: %@",crash_number);
+    NSLog(@"Crash Number: %@",crash_number);
+     NSLog(@"Security Code: %@",security_code);
     
     if ([moto_alarm  isEqual: @"3"]) {
         [_alarm_sounder setOn:YES animated:YES];
