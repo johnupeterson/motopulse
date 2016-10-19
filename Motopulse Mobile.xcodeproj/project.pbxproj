@@ -21,6 +21,9 @@
 		BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF110A1DB1974A008F1FFC /* next-gray.png */; };
 		BEAF11111DB199D6008F1FFC /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11101DB199D6008F1FFC /* line.png */; };
 		BEAF11151DB44694008F1FFC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11141DB44694008F1FFC /* back.png */; };
+		BEAFBC301DB73497001B6C46 /* settings-5.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAFBC2F1DB73497001B6C46 /* settings-5.png */; };
+		BEAFBC321DB73654001B6C46 /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAFBC311DB73654001B6C46 /* dashboard.png */; };
+		BEAFBC341DB737DC001B6C46 /* remote.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAFBC331DB737DC001B6C46 /* remote.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		BEAF110A1DB1974A008F1FFC /* next-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "next-gray.png"; path = "../../../icons/next-gray.png"; sourceTree = "<group>"; };
 		BEAF11101DB199D6008F1FFC /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = ../../../icons/line.png; sourceTree = "<group>"; };
 		BEAF11141DB44694008F1FFC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../icons/back.png; sourceTree = "<group>"; };
+		BEAFBC2F1DB73497001B6C46 /* settings-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-5.png"; path = "../../../../../../settings-5.png"; sourceTree = "<group>"; };
+		BEAFBC311DB73654001B6C46 /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dashboard.png; path = ../../../../../../dashboard.png; sourceTree = "<group>"; };
+		BEAFBC331DB737DC001B6C46 /* remote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = remote.png; path = ../../../../../../remote.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,9 @@
 		BEAF10C91DAEF9FB008F1FFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEAFBC331DB737DC001B6C46 /* remote.png */,
+				BEAFBC311DB73654001B6C46 /* dashboard.png */,
+				BEAFBC2F1DB73497001B6C46 /* settings-5.png */,
 				BEAF11141DB44694008F1FFC /* back.png */,
 				BEAF11101DB199D6008F1FFC /* line.png */,
 				BEAF110A1DB1974A008F1FFC /* next-gray.png */,
@@ -271,8 +280,11 @@
 			files = (
 				BEAF10D91DAEF9FB008F1FFC /* LaunchScreen.storyboard in Resources */,
 				BEAF10D61DAEF9FB008F1FFC /* Assets.xcassets in Resources */,
+				BEAFBC321DB73654001B6C46 /* dashboard.png in Resources */,
+				BEAFBC341DB737DC001B6C46 /* remote.png in Resources */,
 				BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */,
 				BEAF11091DB194C1008F1FFC /* next-1.png in Resources */,
+				BEAFBC301DB73497001B6C46 /* settings-5.png in Resources */,
 				A3FC67B81DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png in Resources */,
 				BEAF11151DB44694008F1FFC /* back.png in Resources */,
 				BEAF10D41DAEF9FB008F1FFC /* Main.storyboard in Resources */,
