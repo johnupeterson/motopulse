@@ -36,6 +36,8 @@
     _security_code_form.text = security_code;
     _motopulse_number.text = motopulse_number;
     _motion_sensitivity.text = motion_sensitivity;
+   
+   
     
     NSLog(@"CCID: %@",ccid);
     NSURL *last_location_url = [NSURL URLWithString:@"http://maps.google.com/?q=37.148700,-121.672425"];
@@ -72,6 +74,11 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motion Sensitivity" message:@"Saved Sensitivity Setting For Your Device" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (IBAction)motopulse_action:(id)sender {
@@ -89,25 +96,39 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motopulse Number" message:@"Saved Number For Your Motopulse Device" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 
 
 - (IBAction)security_code_action:(id)sender {
     //Action For Save Button
+    
     _security_code_form.text = _security_code_form.text;
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-PIN=",_security_code_form.text]];
+    
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",ret);
+    
     security_code = _security_code_form.text;
-    
-    
     [[NSUserDefaults standardUserDefaults] setObject:security_code forKey:@"security_code"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     
-    
     NSLog(@"The saved value is: %@",_security_code_form.text);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Security_Code" message:@"Security Code Used To Send Commands To Motopulse Saved." delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Security Code" message:@"Security Code Used To Send Commands To Motopulse Saved." delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 
@@ -130,6 +151,11 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Device ID" message:@"All commands will be sent to this new device" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (IBAction)transmit_settings:(id)sender {
@@ -147,6 +173,10 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motion Notification" message:@"Motion Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
     
 }
 - (IBAction)save_crash_number:(id)sender {
@@ -159,6 +189,11 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Crash Notification" message:@"Crash Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 

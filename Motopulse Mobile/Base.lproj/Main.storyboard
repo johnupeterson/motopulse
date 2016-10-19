@@ -266,7 +266,7 @@
         <!--Settings-->
         <scene sceneID="UwF-Ob-o4o">
             <objects>
-                <viewController title="Settings" id="acq-Mb-HzR" customClass="device_id" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Settings" title="Settings" id="acq-Mb-HzR" customClass="device_id" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fvK-kT-0hN"/>
                         <viewControllerLayoutGuide type="bottom" id="Xfc-Xl-mOl"/>
@@ -955,7 +955,7 @@
                                         <color key="textColor" red="0.81176470590000005" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MILES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2v-TD-P4v">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOURS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2v-TD-P4v">
                                         <rect key="frame" x="160" y="81" width="160" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
@@ -1033,8 +1033,8 @@
         <image name="settings-5.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vzV-ob-e40"/>
         <segue reference="vSU-xs-heg"/>
+        <segue reference="JCI-GW-skO"/>
         <segue reference="kbZ-Sn-8Pt"/>
     </inferredMetricsTieBreakers>
 </document>

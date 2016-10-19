@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3C92CC21DB7C23D00A5BF9C /* remote.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC11DB7C23D00A5BF9C /* remote.png */; };
+		A3C92CC41DB7C33000A5BF9C /* settings-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC31DB7C33000A5BF9C /* settings-5.png */; };
+		A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC51DB7C56900A5BF9C /* dashboard.png */; };
 		A3FC67B81DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */; };
 		A3FC67BB1DB59EE400DDDBE1 /* device_id.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FC67BA1DB59EE400DDDBE1 /* device_id.m */; };
 		BEAF10CB1DAEF9FB008F1FFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10CA1DAEF9FB008F1FFC /* main.m */; };
@@ -21,9 +24,6 @@
 		BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF110A1DB1974A008F1FFC /* next-gray.png */; };
 		BEAF11111DB199D6008F1FFC /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11101DB199D6008F1FFC /* line.png */; };
 		BEAF11151DB44694008F1FFC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAF11141DB44694008F1FFC /* back.png */; };
-		BEAFBC301DB73497001B6C46 /* settings-5.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAFBC2F1DB73497001B6C46 /* settings-5.png */; };
-		BEAFBC321DB73654001B6C46 /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAFBC311DB73654001B6C46 /* dashboard.png */; };
-		BEAFBC341DB737DC001B6C46 /* remote.png in Resources */ = {isa = PBXBuildFile; fileRef = BEAFBC331DB737DC001B6C46 /* remote.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3C92CC11DB7C23D00A5BF9C /* remote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remote.png; sourceTree = "<group>"; };
+		A3C92CC31DB7C33000A5BF9C /* settings-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-5.png"; sourceTree = "<group>"; };
+		A3C92CC51DB7C56900A5BF9C /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
 		A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = motopulse_splashlogo_300.png; sourceTree = "<group>"; };
 		A3FC67B91DB59EE400DDDBE1 /* device_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = device_id.h; path = "Motopulse Mobile/device_id.h"; sourceTree = "<group>"; };
 		A3FC67BA1DB59EE400DDDBE1 /* device_id.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = device_id.m; path = "Motopulse Mobile/device_id.m"; sourceTree = "<group>"; };
@@ -68,9 +71,6 @@
 		BEAF110A1DB1974A008F1FFC /* next-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "next-gray.png"; path = "../../../icons/next-gray.png"; sourceTree = "<group>"; };
 		BEAF11101DB199D6008F1FFC /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = ../../../icons/line.png; sourceTree = "<group>"; };
 		BEAF11141DB44694008F1FFC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../icons/back.png; sourceTree = "<group>"; };
-		BEAFBC2F1DB73497001B6C46 /* settings-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-5.png"; path = "../../../../../../settings-5.png"; sourceTree = "<group>"; };
-		BEAFBC311DB73654001B6C46 /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dashboard.png; path = ../../../../../../dashboard.png; sourceTree = "<group>"; };
-		BEAFBC331DB737DC001B6C46 /* remote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = remote.png; path = ../../../../../../remote.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +140,12 @@
 		BEAF10C91DAEF9FB008F1FFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BEAFBC331DB737DC001B6C46 /* remote.png */,
-				BEAFBC311DB73654001B6C46 /* dashboard.png */,
-				BEAFBC2F1DB73497001B6C46 /* settings-5.png */,
+				A3C92CC11DB7C23D00A5BF9C /* remote.png */,
+				A3C92CC31DB7C33000A5BF9C /* settings-5.png */,
 				BEAF11141DB44694008F1FFC /* back.png */,
 				BEAF11101DB199D6008F1FFC /* line.png */,
 				BEAF110A1DB1974A008F1FFC /* next-gray.png */,
+				A3C92CC51DB7C56900A5BF9C /* dashboard.png */,
 				BEAF11081DB194C1008F1FFC /* next-1.png */,
 				A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */,
 				BEAF10CA1DAEF9FB008F1FFC /* main.m */,
@@ -279,12 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEAF10D91DAEF9FB008F1FFC /* LaunchScreen.storyboard in Resources */,
+				A3C92CC21DB7C23D00A5BF9C /* remote.png in Resources */,
 				BEAF10D61DAEF9FB008F1FFC /* Assets.xcassets in Resources */,
-				BEAFBC321DB73654001B6C46 /* dashboard.png in Resources */,
-				BEAFBC341DB737DC001B6C46 /* remote.png in Resources */,
 				BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */,
+				A3C92CC41DB7C33000A5BF9C /* settings-5.png in Resources */,
+				A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */,
 				BEAF11091DB194C1008F1FFC /* next-1.png in Resources */,
-				BEAFBC301DB73497001B6C46 /* settings-5.png in Resources */,
 				A3FC67B81DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png in Resources */,
 				BEAF11151DB44694008F1FFC /* back.png in Resources */,
 				BEAF10D41DAEF9FB008F1FFC /* Main.storyboard in Resources */,
