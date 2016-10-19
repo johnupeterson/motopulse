@@ -64,6 +64,13 @@
     _motion_sensitivity.text = _motion_sensitivity.text;
     motion_sensitivity = _motion_sensitivity.text;
     
+    _security_code_form.text = _security_code_form.text;
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-MS=",motion_sensitivity]];
+    
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",ret);
+    
     
     [[NSUserDefaults standardUserDefaults] setObject:motion_sensitivity forKey:@"motion_sensitivity"];
     [[NSUserDefaults standardUserDefaults] synchronize];

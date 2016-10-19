@@ -128,7 +128,7 @@
     UISwitch *mySwitch = (UISwitch *)sender;
     if ([mySwitch isOn]) {
         NSLog(@"its on!");
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-WB=1"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-RT=1"]];
         
         
         NSData *data = [NSData dataWithContentsOfURL:url];
