@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIWebView *last_location;
 @property (weak, nonatomic) IBOutlet UITextField *motopulse_number;
 
+@property (weak, nonatomic) IBOutlet UITextField *motion_sensitivity;
 
 
 @end
@@ -34,6 +35,8 @@
     _crash_notification_number.text = crash_number;
     _security_code_form.text = security_code;
     _motopulse_number.text = motopulse_number;
+    _motion_sensitivity.text = motion_sensitivity;
+    
     NSLog(@"CCID: %@",ccid);
     NSURL *last_location_url = [NSURL URLWithString:@"http://maps.google.com/?q=37.148700,-121.672425"];
     NSURLRequest *Request = [NSURLRequest requestWithURL:last_location_url];
@@ -54,6 +57,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)sensitivity_action:(id)sender {
+    //Action For Save Button
+    _motion_sensitivity.text = _motion_sensitivity.text;
+    motion_sensitivity = _motion_sensitivity.text;
+    
+    
+    [[NSUserDefaults standardUserDefaults] setObject:motion_sensitivity forKey:@"motion_sensitivity"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
+    
+    NSLog(@"The saved value is: %@",_motion_sensitivity.text);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motion Sensitivity" message:@"Saved Sensitivity Setting For Your Device" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    [alert show];
+}
 
 - (IBAction)motopulse_action:(id)sender {
     //Action For Save Button

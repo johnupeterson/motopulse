@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="-234.375" y="-212.32394366197184"/>
         </scene>
-        <!--Device id-->
+        <!--Motopulse Number-->
         <scene sceneID="gqH-DW-DI9">
             <objects>
-                <viewController storyboardIdentifier="Motopulse Number" id="wVW-Bm-lIQ" customClass="device_id" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Motopulse Number" title="Motopulse Number" id="wVW-Bm-lIQ" customClass="device_id" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="geU-dG-jcf"/>
                         <viewControllerLayoutGuide type="bottom" id="7Xv-0L-j0H"/>
@@ -418,6 +418,9 @@
                                 <state key="normal" title="Motion Detection Sensitivity">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="YaD-Nk-7tW" kind="show" id="nX9-Sb-ZvV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -587,6 +590,88 @@
             </objects>
             <point key="canvasLocation" x="1577" y="1157"/>
         </scene>
+        <!--Sensitivity-->
+        <scene sceneID="HR8-c6-vxo">
+            <objects>
+                <viewController title="Sensitivity" id="YaD-Nk-7tW" customClass="device_id" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ntw-7F-jul"/>
+                        <viewControllerLayoutGuide type="bottom" id="iUN-Lx-xqJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="13t-C2-ggO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Motion Sensitivity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTw-0u-Jlz">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgc-VQ-dcM">
+                                <rect key="frame" x="9" y="27" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Dashboard">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JGm-TY-CoK" kind="show" id="vzV-ob-e40"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md8-dd-W4b">
+                                <rect key="frame" x="257" y="27" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="di7-MU-cD0"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please enter your security access code" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9UO-EQ-vlZ">
+                                <rect key="frame" x="16" y="72" width="310" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjC-eb-Uwi">
+                                <rect key="frame" x="5" y="101" width="310" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAx-zP-VGb">
+                                <rect key="frame" x="5" y="139" width="310" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Save Motion Sensitivity">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save_crash_number:" destination="u4M-kj-Q4N" eventType="touchUpInside" id="EJv-mO-IJP"/>
+                                    <action selector="security_code_action:" destination="C8O-4O-GmR" eventType="touchUpInside" id="NI5-BV-wlL"/>
+                                    <action selector="sensitivity_action:" destination="YaD-Nk-7tW" eventType="touchUpInside" id="1gX-w1-kdU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="motion_sensitivity" destination="bjC-eb-Uwi" id="ud9-HH-cxk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZC-Rj-dtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-456" y="1275"/>
+        </scene>
         <!--Security Access Code-->
         <scene sceneID="kyi-Lc-S93">
             <objects>
@@ -666,7 +751,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqQ-tw-tcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="1254"/>
+            <point key="canvasLocation" x="176" y="1199"/>
         </scene>
         <!--Crash Notifications-->
         <scene sceneID="eLw-BT-Bef">
@@ -901,8 +986,8 @@
         <image name="line.png" width="1" height="1"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nK1-to-Lri"/>
-        <segue reference="kG0-dd-3qr"/>
+        <segue reference="di7-MU-cD0"/>
         <segue reference="adG-yS-Dz1"/>
+        <segue reference="vzV-ob-e40"/>
     </inferredMetricsTieBreakers>
 </document>

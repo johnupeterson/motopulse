@@ -15,4 +15,5 @@ extern NSString *biker_number;
 extern NSString *crash_number;
 extern NSString *security_code;
 extern NSString *motopulse_number;
+extern NSString *motion_sensitivity;
 #endif /* globals_h */

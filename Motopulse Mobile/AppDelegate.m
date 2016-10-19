@@ -14,6 +14,7 @@ NSString *biker_number;
 NSString *crash_number;
 NSString *security_code;
 NSString *motopulse_number;
+NSString *motion_sensitivity;
 
 @interface AppDelegate ()
 
@@ -40,6 +41,8 @@ NSString *motopulse_number;
                      stringForKey:@"security_code"];
     motopulse_number = [[NSUserDefaults standardUserDefaults]
                      stringForKey:@"motopulse_number"];
+    motion_sensitivity = [[NSUserDefaults standardUserDefaults]
+                        stringForKey:@"motion_sensitivity"];
     
     NSLog(@"CCID: %@",ccid);
     NSLog(@"Alarm: %@",moto_alarm);
