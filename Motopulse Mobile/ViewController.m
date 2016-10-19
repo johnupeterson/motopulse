@@ -69,6 +69,7 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bike Alarm" message:@"Command Sent To Stop Deactivate All Detections" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    [self viewDidLoad];
     
 }
 - (IBAction)get_gps:(id)sender {
@@ -82,6 +83,7 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"GPS Locator" message:@"GPS Notification Sent - You will receive a message shortly with your bikes location.  If not, please try again." delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
+    
 }
 - (IBAction)find_bike:(UISwitch *)sender {
     UISwitch *mySwitch = (UISwitch *)sender;
