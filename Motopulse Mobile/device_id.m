@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *device_id_form;
 @property (weak, nonatomic) IBOutlet UITextField *security_code_form;
 @property (weak, nonatomic) IBOutlet UIWebView *last_location;
+@property (weak, nonatomic) IBOutlet UITextField *motopulse_number;
 
 
 
@@ -32,6 +33,7 @@
     _motion_notification_number.text = biker_number;
     _crash_notification_number.text = crash_number;
     _security_code_form.text = security_code;
+    _motopulse_number.text = motopulse_number;
     NSLog(@"CCID: %@",ccid);
     NSURL *last_location_url = [NSURL URLWithString:@"http://maps.google.com/?q=37.148700,-121.672425"];
     NSURLRequest *Request = [NSURLRequest requestWithURL:last_location_url];
@@ -53,6 +55,22 @@
 }
 */
 
+- (IBAction)motopulse_action:(id)sender {
+    //Action For Save Button
+    _motopulse_number.text = _motopulse_number.text;
+    motopulse_number = _motopulse_number.text;
+    
+    
+    [[NSUserDefaults standardUserDefaults] setObject:motopulse_number forKey:@"motopulse_number"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
+    
+    NSLog(@"The saved value is: %@",_motopulse_number.text);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motopulse Number" message:@"Saved Number For Your Motopulse Device" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    [alert show];
+}
 
 
 

@@ -57,7 +57,7 @@
 }
 
 - (IBAction)deactivate_alarms:(id)sender {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-A0"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-A0"]];
     
     
     NSData *data = [NSData dataWithContentsOfURL:url];
@@ -72,7 +72,7 @@
     
 }
 - (IBAction)get_gps:(id)sender {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-GPS"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-GPS"]];
     
     
     NSData *data = [NSData dataWithContentsOfURL:url];
@@ -95,7 +95,7 @@
         [[NSUserDefaults standardUserDefaults] setObject:moto_alarm forKey:@"moto_alarm"];
         [[NSUserDefaults standardUserDefaults] synchronize];
 
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-A3"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-A3"]];
         NSData *data = [NSData dataWithContentsOfURL:url];
         NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"ret=%@", ret);
@@ -110,7 +110,7 @@
         [[NSUserDefaults standardUserDefaults] setObject:moto_alarm forKey:@"moto_alarm"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-A0"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-A0"]];
         
         
         NSData *data = [NSData dataWithContentsOfURL:url];
@@ -126,7 +126,7 @@
     UISwitch *mySwitch = (UISwitch *)sender;
     if ([mySwitch isOn]) {
         NSLog(@"its on!");
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-WB=1"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-WB=1"]];
         
         
         NSData *data = [NSData dataWithContentsOfURL:url];
@@ -134,7 +134,7 @@
         NSLog(@"ret=%@", ret);
     } else {
         NSLog(@"its off!");
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-WB=0"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-WB=0"]];
         
         
         NSData *data = [NSData dataWithContentsOfURL:url];
@@ -148,7 +148,7 @@
     UISegmentedControl *segmentedControl = (UISegmentedControl *) sender;
     NSInteger selectedSegment = segmentedControl.selectedSegmentIndex;
     if (selectedSegment == 0) {
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-A1"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-A1"]];
         
         
         NSData *data = [NSData dataWithContentsOfURL:url];
@@ -164,7 +164,7 @@
     
     }
     if (selectedSegment == 1) {
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=14086599322&command=1234-A2"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-A2"]];
         
         NSData *data = [NSData dataWithContentsOfURL:url];
         NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];

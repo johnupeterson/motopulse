@@ -13,6 +13,7 @@ NSString *moto_alarm;
 NSString *biker_number;
 NSString *crash_number;
 NSString *security_code;
+NSString *motopulse_number;
 
 @interface AppDelegate ()
 
@@ -37,6 +38,8 @@ NSString *security_code;
                     stringForKey:@"crash_number"];
     security_code = [[NSUserDefaults standardUserDefaults]
                      stringForKey:@"security_code"];
+    motopulse_number = [[NSUserDefaults standardUserDefaults]
+                     stringForKey:@"motopulse_number"];
     
     NSLog(@"CCID: %@",ccid);
     NSLog(@"Alarm: %@",moto_alarm);
