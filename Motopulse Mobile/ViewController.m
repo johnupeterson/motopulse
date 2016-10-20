@@ -136,7 +136,7 @@
         NSLog(@"ret=%@", ret);
     } else {
         NSLog(@"its off!");
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-WB=0"]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-RT=0"]];
         
         
         NSData *data = [NSData dataWithContentsOfURL:url];
