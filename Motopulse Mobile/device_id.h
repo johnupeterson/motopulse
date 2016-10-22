@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
+@interface device_id : UIViewController{
+    MKMapView *mapview;
 
-@interface device_id : UIViewController
+}
 
-
+@property (strong, nonatomic) IBOutlet MKMapView *mapview;
 @end

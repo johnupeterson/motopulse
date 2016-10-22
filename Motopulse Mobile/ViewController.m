@@ -11,6 +11,8 @@
 
 
 
+
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *alarm_sounder;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *detecting_setting;
@@ -18,9 +20,11 @@
 @property (weak, nonatomic) IBOutlet UISwitch *crash_motion;
 @property (weak, nonatomic) IBOutlet UISwitch *record_ride_switch;
 
+
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

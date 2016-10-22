@@ -12,11 +12,13 @@
 
 @interface device_id ()
 
+
+
 @property (weak, nonatomic) IBOutlet UITextField *motion_notification_number;
 @property (weak, nonatomic) IBOutlet UITextField *crash_notification_number;
 @property (weak, nonatomic) IBOutlet UITextField *device_id_form;
 @property (weak, nonatomic) IBOutlet UITextField *security_code_form;
-@property (weak, nonatomic) IBOutlet UIWebView *last_location;
+
 @property (weak, nonatomic) IBOutlet UITextField *motopulse_number;
 
 @property (weak, nonatomic) IBOutlet UITextField *motion_sensitivity;
@@ -25,6 +27,7 @@
 @end
 
 @implementation device_id
+@synthesize mapview = _mapview;
 
 
 - (void)viewDidLoad {
@@ -37,12 +40,20 @@
     _motopulse_number.text = motopulse_number;
     _motion_sensitivity.text = motion_sensitivity;
    
-   
+
     
-    NSLog(@"CCID: %@",ccid);
-    NSURL *last_location_url = [NSURL URLWithString:@"http://maps.google.com/?q=37.148700,-121.672425"];
-    NSURLRequest *Request = [NSURLRequest requestWithURL:last_location_url];
-    [_last_location loadRequest:Request];
+}
+
+- (void)updateMapView:(CLLocation *)location {
+    
+    // create a region and pass it to the Map View
+    MKCoordinateRegion region;
+    region.center.latitude = location.coordinate.latitude;
+    region.center.longitude = location.coordinate.longitude;
+    region.span.latitudeDelta = 0.001;
+    region.span.longitudeDelta = 0.001;
+    
+    [self.mapview setRegion:region animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -958,11 +958,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MyA-6g-Adn">
-                                <rect key="frame" x="0.0" y="347" width="320" height="223"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K25-3S-AKM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -1086,16 +1081,20 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="kbZ-Sn-8Pt"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="stZ-aS-5Ta">
+                                <rect key="frame" x="0.0" y="355" width="320" height="213"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="last_location" destination="MyA-6g-Adn" id="bDk-4q-Qve"/>
+                        <outlet property="mapview" destination="stZ-aS-5Ta" id="KbM-5K-gOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58f-Qe-PQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-984.375" y="148.94366197183098"/>
+            <point key="canvasLocation" x="-985" y="148"/>
         </scene>
     </scenes>
     <resources>
@@ -1105,8 +1104,8 @@
         <image name="settings-5.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UAs-ah-zLI"/>
-        <segue reference="adG-yS-Dz1"/>
-        <segue reference="JCI-GW-skO"/>
+        <segue reference="kbZ-Sn-8Pt"/>
+        <segue reference="kG0-dd-3qr"/>
+        <segue reference="vSU-xs-heg"/>
     </inferredMetricsTieBreakers>
 </document>

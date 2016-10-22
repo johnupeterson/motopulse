@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A33096301DBBBE500059BD07 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A330962F1DBBBE500059BD07 /* MapKit.framework */; };
 		A3C92CC21DB7C23D00A5BF9C /* remote.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC11DB7C23D00A5BF9C /* remote.png */; };
 		A3C92CC41DB7C33000A5BF9C /* settings-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC31DB7C33000A5BF9C /* settings-5.png */; };
 		A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC51DB7C56900A5BF9C /* dashboard.png */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A330962F1DBBBE500059BD07 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A3C92CC11DB7C23D00A5BF9C /* remote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remote.png; sourceTree = "<group>"; };
 		A3C92CC31DB7C33000A5BF9C /* settings-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-5.png"; sourceTree = "<group>"; };
 		A3C92CC51DB7C56900A5BF9C /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33096301DBBBE500059BD07 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A330962E1DBBBE500059BD07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A330962F1DBBBE500059BD07 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BEAF10BD1DAEF9FA008F1FFC = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +119,7 @@
 				BEAF10E21DAEF9FB008F1FFC /* Motopulse MobileTests */,
 				BEAF10ED1DAEF9FB008F1FFC /* Motopulse MobileUITests */,
 				BEAF10C71DAEF9FB008F1FFC /* Products */,
+				A330962E1DBBBE500059BD07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
