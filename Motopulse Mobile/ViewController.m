@@ -14,6 +14,9 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *alarm_sounder;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *detecting_setting;
+@property (weak, nonatomic) IBOutlet UISwitch *voice_motion;
+@property (weak, nonatomic) IBOutlet UISwitch *crash_motion;
+@property (weak, nonatomic) IBOutlet UISwitch *record_ride_switch;
 
 @end
 
@@ -21,7 +24,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
+    
+    if ([ride_tracking isEqual: @"1"]) {
+        [_record_ride_switch setOn:YES animated:YES];}
+        
+        if ([ride_tracking isEqual: @"0"]) {
+            [_record_ride_switch setOn:NO animated:YES];}
+    
+    
+    if ([voice_crash_setting isEqual: @"1"]) {
+        [_voice_motion setOn:YES animated:YES];}
+    
+    if ([voice_crash_setting isEqual: @"0"]) {
+        [_voice_motion setOn:NO animated:YES];}
+    
+    if ([voice_crash_setting isEqual: @"3"]) {
+        [_voice_motion setOn:YES animated:YES];}
+    
+    
+    
+    if ([voice_motion_setting isEqual: @"2"]) {
+        [_crash_motion setOn:YES animated:YES];}
+    
+    if ([voice_motion_setting isEqual: @"0"]) {
+        [_crash_motion setOn:NO animated:YES];}
+    
+    if ([voice_motion_setting isEqual: @"3"]) {
+        [_crash_motion setOn:YES animated:YES];}
+
+    
+    
     
     
     if ([moto_alarm  isEqual: @"3"]) {
@@ -88,8 +122,6 @@
 - (IBAction)find_bike:(UISwitch *)sender {
     UISwitch *mySwitch = (UISwitch *)sender;
     
-   
-    
     
     if ([mySwitch isOn]) {
         NSLog(@"its on!");
@@ -128,6 +160,12 @@
     UISwitch *mySwitch = (UISwitch *)sender;
     if ([mySwitch isOn]) {
         NSLog(@"its on!");
+        
+        ride_tracking = @"1";
+        [[NSUserDefaults standardUserDefaults] setObject:ride_tracking forKey:@"ride_tracking"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+
+        
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-RT=1"]];
         
         
@@ -136,6 +174,12 @@
         NSLog(@"ret=%@", ret);
     } else {
         NSLog(@"its off!");
+        
+        ride_tracking = @"0";
+        [[NSUserDefaults standardUserDefaults] setObject:ride_tracking forKey:@"ride_tracking"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+
+        
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-RT=0"]];
         
         
@@ -181,6 +225,134 @@
     }
 
     
+    
+}
+
+- (IBAction)voice_crash_action:(id)sender {
+    UISwitch *mySwitch = (UISwitch *)sender;
+    if ([mySwitch isOn]) {
+        NSLog(@"its on!");
+    
+       
+            voice_crash_setting = @"1";
+        
+        if ([voice_crash_setting  isEqual: @"1"] && [voice_motion_setting  isEqual: @"2"])
+        {
+            voice_crash_setting = @"3";
+        }
+        
+        if ([voice_crash_setting  isEqual: @"1"] && [voice_motion_setting  isEqual: @"3"])
+        {
+            voice_crash_setting = @"3";
+        }
+        
+    
+        [[NSUserDefaults standardUserDefaults] setObject:voice_crash_setting forKey:@"voice_crash_setting"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-VM=",voice_crash_setting]];
+        
+        
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"ret=%@", ret);
+        NSLog(@"Setting = %@",voice_crash_setting);
+    } else {
+        NSLog(@"its off!");
+        
+       
+            voice_crash_setting = @"0";
+        
+        if ([voice_crash_setting  isEqual: @"0"] && [voice_motion_setting  isEqual: @"2"])
+        {
+            voice_crash_setting = @"2";
+        }
+        
+        if ([voice_crash_setting  isEqual: @"0"] && [voice_motion_setting  isEqual: @"3"])
+        {
+            voice_crash_setting = @"2";
+           
+        }
+        
+        
+        [[NSUserDefaults standardUserDefaults] setObject:voice_crash_setting forKey:@"voice_crash_setting"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-VM=",voice_crash_setting]];
+        
+        
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"ret=%@", ret);
+         NSLog(@"Setting = %@",voice_crash_setting);
+    }
+
+    
+}
+- (IBAction)motion_action:(id)sender {
+    UISwitch *mySwitch = (UISwitch *)sender;
+    if ([mySwitch isOn]) {
+         NSLog(@"its on!");
+        
+        
+        voice_motion_setting = @"2";
+        
+        if ([voice_motion_setting  isEqual: @"2"] && [voice_crash_setting  isEqual: @"1"]   )
+        {
+            voice_motion_setting = @"3";
+        }
+        
+        if ([voice_motion_setting  isEqual: @"2"] && [voice_crash_setting  isEqual: @"3"]   )
+        {
+            voice_motion_setting = @"3";
+        }
+
+        
+    
+        [[NSUserDefaults standardUserDefaults] setObject:voice_motion_setting forKey:@"voice_motion_setting"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-VM=",voice_motion_setting]];
+        
+        
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"ret=%@", ret);
+        NSLog(@"Setting = %@",voice_motion_setting);
+    } else {
+        NSLog(@"its off!");
+        
+       
+            voice_motion_setting = @"0";
+        
+        if ([voice_motion_setting  isEqual: @"0"] && [voice_crash_setting  isEqual: @"1"]   )
+        {
+            voice_motion_setting = @"1";
+        }
+        
+        if ([voice_motion_setting  isEqual: @"0"] && [voice_crash_setting  isEqual: @"3"]   )
+        {
+            voice_motion_setting = @"1";
+        }
+
+        
+        voice_crash_setting = @"0";
+        [[NSUserDefaults standardUserDefaults] setObject:voice_motion_setting forKey:@"voice_motion_setting"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-VM=",voice_motion_setting]];
+        
+        
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"ret=%@", ret);
+         NSLog(@"Setting = %@",voice_motion_setting);
+    }
+
     
 }
 

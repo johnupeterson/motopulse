@@ -16,4 +16,8 @@ extern NSString *crash_number;
 extern NSString *security_code;
 extern NSString *motopulse_number;
 extern NSString *motion_sensitivity;
+extern NSString *ride_tracking;
+extern NSString *voice_crash_setting;
+extern NSString *voice_motion_setting;
+
 #endif /* globals_h */

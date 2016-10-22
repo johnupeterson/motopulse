@@ -15,6 +15,10 @@ NSString *crash_number;
 NSString *security_code;
 NSString *motopulse_number;
 NSString *motion_sensitivity;
+NSString *ride_tracking;
+NSString *voice_crash_setting;
+NSString *voice_motion_setting;
+
 
 @interface AppDelegate ()
 
@@ -43,6 +47,12 @@ NSString *motion_sensitivity;
                      stringForKey:@"motopulse_number"];
     motion_sensitivity = [[NSUserDefaults standardUserDefaults]
                         stringForKey:@"motion_sensitivity"];
+    ride_tracking = [[NSUserDefaults standardUserDefaults]
+                          stringForKey:@"ride_tracking"];
+    voice_crash_setting = [[NSUserDefaults standardUserDefaults]
+                     stringForKey:@"voice_crash_setting"];
+    voice_motion_setting = [[NSUserDefaults standardUserDefaults]
+                           stringForKey:@"voice_motion_setting"];
     
     NSLog(@"CCID: %@",ccid);
     NSLog(@"Alarm: %@",moto_alarm);
