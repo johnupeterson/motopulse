@@ -80,6 +80,9 @@
     NSLog(@"The saved value is: %@",_motion_sensitivity.text);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motion Sensitivity" message:@"Saved Sensitivity Setting For Your Device" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
+    
+    
+    
     [alert show];
     
     NSString * storyboardName = @"Main";
@@ -170,6 +173,9 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sent Settings" message:@"Sucessfully Sent Settings To Your Motopulse" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     [alert show];
 }
+
+
+
 - (IBAction)save_motion_number:(id)sender {
     _motion_notification_number.text = _motion_notification_number.text;
     biker_number = _motion_notification_number.text;
@@ -178,6 +184,11 @@
     
     NSLog(@"The saved value is: %@",_motion_notification_number.text);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Motion Notification" message:@"Motion Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-BN=",biker_number]];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"ret=%@", ret);
     
     [alert show];
     NSString * storyboardName = @"Main";
@@ -194,6 +205,53 @@
     
     NSLog(@"The saved value is: %@",_crash_notification_number.text);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Crash Notification" message:@"Crash Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-EM=",crash_number]];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"ret=%@", ret);
+
+    
+    [alert show];
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)reset_all:(id)sender {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@",motopulse_number,@"&command=",ccid]];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"ret=%@", ret);
+    
+    
+    
+    
+    crash_number = @"14085551212";
+    [[NSUserDefaults standardUserDefaults] setObject:crash_number forKey:@"crash_number"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
+    biker_number = @"14085551212";
+    [[NSUserDefaults standardUserDefaults] setObject:biker_number forKey:@"biker_number"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
+    security_code = @"1234";
+    [[NSUserDefaults standardUserDefaults] setObject:security_code forKey:@"security_code"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
+    motion_sensitivity = @"9";
+    [[NSUserDefaults standardUserDefaults] setObject:motion_sensitivity forKey:@"motion_sensitivity"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
+    
+    
+    
+    
+    
+     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reset Device To Factory Defaults" message:@"Crash Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
     

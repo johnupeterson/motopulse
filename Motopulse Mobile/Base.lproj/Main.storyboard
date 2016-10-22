@@ -461,6 +461,9 @@
                                 <state key="normal" title="Restore Motopulse to Factory Settings">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="reset_all:" destination="acq-Mb-HzR" eventType="touchUpInside" id="oZu-LS-QWZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh3-0Q-rbb">
                                 <rect key="frame" x="5" y="377" width="308" height="30"/>
@@ -1102,8 +1105,8 @@
         <image name="settings-5.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ljf-Ra-Dh9"/>
-        <segue reference="adG-yS-Dz1"/>
         <segue reference="UAs-ah-zLI"/>
+        <segue reference="adG-yS-Dz1"/>
+        <segue reference="JCI-GW-skO"/>
     </inferredMetricsTieBreakers>
 </document>
