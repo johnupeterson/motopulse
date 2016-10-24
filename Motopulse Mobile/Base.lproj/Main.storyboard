@@ -997,7 +997,7 @@
         <!--Dashboard-->
         <scene sceneID="dfl-1o-bMD">
             <objects>
-                <viewController title="Dashboard" id="JGm-TY-CoK" customClass="device_id" sceneMemberID="viewController">
+                <viewController title="Dashboard" id="JGm-TY-CoK" customClass="DashViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aIp-Mo-o3D"/>
                         <viewControllerLayoutGuide type="bottom" id="BLf-OC-Z6P"/>
@@ -1139,7 +1139,7 @@
                     <connections>
                         <outlet property="bike_speed_label" destination="Szm-UY-6P7" id="27R-9U-agH"/>
                         <outlet property="bike_time" destination="GXy-Vb-StM" id="a07-Oa-yNV"/>
-                        <outlet property="mapview" destination="stZ-aS-5Ta" id="KbM-5K-gOS"/>
+                        <outlet property="mapview" destination="stZ-aS-5Ta" id="rA4-iP-RGL"/>
                         <outlet property="miles_label" destination="Sis-GB-5YF" id="831-Jm-OPG"/>
                     </connections>
                 </viewController>

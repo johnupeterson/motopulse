@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A33096301DBBBE500059BD07 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A330962F1DBBBE500059BD07 /* MapKit.framework */; };
+		A33096331DBDC7930059BD07 /* DashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33096321DBDC7930059BD07 /* DashViewController.m */; };
 		A3C92CC21DB7C23D00A5BF9C /* remote.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC11DB7C23D00A5BF9C /* remote.png */; };
 		A3C92CC41DB7C33000A5BF9C /* settings-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC31DB7C33000A5BF9C /* settings-5.png */; };
 		A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC51DB7C56900A5BF9C /* dashboard.png */; };
@@ -46,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		A330962F1DBBBE500059BD07 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A33096311DBDC7930059BD07 /* DashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashViewController.h; path = "Motopulse Mobile/DashViewController.h"; sourceTree = "<group>"; };
+		A33096321DBDC7930059BD07 /* DashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashViewController.m; path = "Motopulse Mobile/DashViewController.m"; sourceTree = "<group>"; };
 		A3C92CC11DB7C23D00A5BF9C /* remote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remote.png; sourceTree = "<group>"; };
 		A3C92CC31DB7C33000A5BF9C /* settings-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-5.png"; sourceTree = "<group>"; };
 		A3C92CC51DB7C56900A5BF9C /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 		BEAF10BD1DAEF9FA008F1FFC = {
 			isa = PBXGroup;
 			children = (
+				A33096311DBDC7930059BD07 /* DashViewController.h */,
+				A33096321DBDC7930059BD07 /* DashViewController.m */,
 				A3FC67BC1DB5B2EA00DDDBE1 /* globals.h */,
 				A3FC67B91DB59EE400DDDBE1 /* device_id.h */,
 				A3FC67BA1DB59EE400DDDBE1 /* device_id.m */,
@@ -327,6 +332,7 @@
 			files = (
 				BEAF10D11DAEF9FB008F1FFC /* ViewController.m in Sources */,
 				BEAF10CE1DAEF9FB008F1FFC /* AppDelegate.m in Sources */,
+				A33096331DBDC7930059BD07 /* DashViewController.m in Sources */,
 				A3FC67BB1DB59EE400DDDBE1 /* device_id.m in Sources */,
 				BEAF10CB1DAEF9FB008F1FFC /* main.m in Sources */,
 			);
