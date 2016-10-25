@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "globals.h"
+#import <Social/Social.h>
 
 
 
@@ -358,6 +359,27 @@
     }
 
     
+}
+- (IBAction)postToFacebook:(id)sender {
+    
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        
+       
+        [controller addURL:[NSURL URLWithString:@"http://maps.google.com/?q=37.454468,-122.284835"]];
+        [self presentViewController:controller animated:YES completion:Nil];
+    }
+    
+}
+- (IBAction)postToTwitter:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController
+                                               composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:@"Check out my latest Motopulse Stats"];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
 }
 
 @end

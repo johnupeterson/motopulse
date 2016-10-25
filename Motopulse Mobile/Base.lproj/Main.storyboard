@@ -210,6 +210,22 @@
                                     <segue destination="acq-Mb-HzR" kind="show" id="UAs-ah-zLI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFL-8M-WJv">
+                                <rect key="frame" x="15" y="497" width="139" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facebook-share-icon.jpg"/>
+                                <connections>
+                                    <action selector="postToFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tkp-Zl-lKW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESa-D8-PuR">
+                                <rect key="frame" x="161" y="492" width="152" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="tweet-button-2015.png"/>
+                                <connections>
+                                    <action selector="postToTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Rt-bW-7Tt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -306,6 +322,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="l4I-4N-etn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -572,6 +591,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="tAi-nw-1Dy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -664,6 +686,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="KNa-NT-Obz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -743,6 +768,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="thu-Ly-Dpk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAx-zP-VGb">
                                 <rect key="frame" x="165" y="140" width="150" height="30"/>
@@ -836,6 +864,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="3WE-cK-vAJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmB-Wq-gVo">
                                 <rect key="frame" x="165" y="140" width="150" height="30"/>
@@ -937,6 +968,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="U6d-AT-Ms6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1150,13 +1184,15 @@
     </scenes>
     <resources>
         <image name="dashboard.png" width="30" height="30"/>
+        <image name="facebook-share-icon.jpg" width="300" height="118"/>
         <image name="line.png" width="1" height="1"/>
         <image name="remote.png" width="30" height="30"/>
         <image name="settings-5.png" width="30" height="30"/>
+        <image name="tweet-button-2015.png" width="200" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kG0-dd-3qr"/>
-        <segue reference="vSU-xs-heg"/>
-        <segue reference="kbZ-Sn-8Pt"/>
+        <segue reference="Ljf-Ra-Dh9"/>
+        <segue reference="adG-yS-Dz1"/>
+        <segue reference="UAs-ah-zLI"/>
     </inferredMetricsTieBreakers>
 </document>

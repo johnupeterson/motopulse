@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		A33096301DBBBE500059BD07 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A330962F1DBBBE500059BD07 /* MapKit.framework */; };
 		A33096331DBDC7930059BD07 /* DashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33096321DBDC7930059BD07 /* DashViewController.m */; };
+		A33096351DBE99FE0059BD07 /* FB_ShareIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A33096341DBE99FE0059BD07 /* FB_ShareIcon.jpg */; };
+		A33096371DBE9B530059BD07 /* facebook-share-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A33096361DBE9B530059BD07 /* facebook-share-icon.jpg */; };
+		A33096391DBE9CC60059BD07 /* tweet-button-2015.png in Resources */ = {isa = PBXBuildFile; fileRef = A33096381DBE9CC60059BD07 /* tweet-button-2015.png */; };
+		A330963B1DBEA0EC0059BD07 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A330963A1DBEA0EC0059BD07 /* Social.framework */; };
+		A330963D1DBEAB0C0059BD07 /* IMG_0005.PNG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A330963C1DBEAB0C0059BD07 /* IMG_0005.PNG.jpg */; };
 		A3C92CC21DB7C23D00A5BF9C /* remote.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC11DB7C23D00A5BF9C /* remote.png */; };
 		A3C92CC41DB7C33000A5BF9C /* settings-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC31DB7C33000A5BF9C /* settings-5.png */; };
 		A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC51DB7C56900A5BF9C /* dashboard.png */; };
@@ -49,6 +54,11 @@
 		A330962F1DBBBE500059BD07 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A33096311DBDC7930059BD07 /* DashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashViewController.h; path = "Motopulse Mobile/DashViewController.h"; sourceTree = "<group>"; };
 		A33096321DBDC7930059BD07 /* DashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashViewController.m; path = "Motopulse Mobile/DashViewController.m"; sourceTree = "<group>"; };
+		A33096341DBE99FE0059BD07 /* FB_ShareIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FB_ShareIcon.jpg; sourceTree = "<group>"; };
+		A33096361DBE9B530059BD07 /* facebook-share-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "facebook-share-icon.jpg"; sourceTree = "<group>"; };
+		A33096381DBE9CC60059BD07 /* tweet-button-2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tweet-button-2015.png"; sourceTree = "<group>"; };
+		A330963A1DBEA0EC0059BD07 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A330963C1DBEAB0C0059BD07 /* IMG_0005.PNG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0005.PNG.jpg; sourceTree = "<group>"; };
 		A3C92CC11DB7C23D00A5BF9C /* remote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remote.png; sourceTree = "<group>"; };
 		A3C92CC31DB7C33000A5BF9C /* settings-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-5.png"; sourceTree = "<group>"; };
 		A3C92CC51DB7C56900A5BF9C /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
@@ -83,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A330963B1DBEA0EC0059BD07 /* Social.framework in Frameworks */,
 				A33096301DBBBE500059BD07 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +118,7 @@
 		A330962E1DBBBE500059BD07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A330963A1DBEA0EC0059BD07 /* Social.framework */,
 				A330962F1DBBBE500059BD07 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -160,8 +172,12 @@
 				A3C92CC11DB7C23D00A5BF9C /* remote.png */,
 				A3C92CC31DB7C33000A5BF9C /* settings-5.png */,
 				BEAF11141DB44694008F1FFC /* back.png */,
+				A33096381DBE9CC60059BD07 /* tweet-button-2015.png */,
+				A33096361DBE9B530059BD07 /* facebook-share-icon.jpg */,
+				A33096341DBE99FE0059BD07 /* FB_ShareIcon.jpg */,
 				BEAF11101DB199D6008F1FFC /* line.png */,
 				BEAF110A1DB1974A008F1FFC /* next-gray.png */,
+				A330963C1DBEAB0C0059BD07 /* IMG_0005.PNG.jpg */,
 				A3C92CC51DB7C56900A5BF9C /* dashboard.png */,
 				BEAF11081DB194C1008F1FFC /* next-1.png */,
 				A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */,
@@ -300,8 +316,12 @@
 				BEAF10D61DAEF9FB008F1FFC /* Assets.xcassets in Resources */,
 				BEAF110B1DB1974A008F1FFC /* next-gray.png in Resources */,
 				A3C92CC41DB7C33000A5BF9C /* settings-5.png in Resources */,
+				A33096391DBE9CC60059BD07 /* tweet-button-2015.png in Resources */,
 				A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */,
+				A330963D1DBEAB0C0059BD07 /* IMG_0005.PNG.jpg in Resources */,
+				A33096351DBE99FE0059BD07 /* FB_ShareIcon.jpg in Resources */,
 				BEAF11091DB194C1008F1FFC /* next-1.png in Resources */,
+				A33096371DBE9B530059BD07 /* facebook-share-icon.jpg in Resources */,
 				A3FC67B81DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png in Resources */,
 				BEAF11151DB44694008F1FFC /* back.png in Resources */,
 				BEAF10D41DAEF9FB008F1FFC /* Main.storyboard in Resources */,

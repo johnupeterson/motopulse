@@ -38,10 +38,10 @@
     
     NSURL *url3 = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/mp-get-speed.php?ccid=%@",ccid]];
     NSData *data3 = [NSData dataWithContentsOfURL:url3];
-    NSString *ret3 = [[NSString alloc] initWithData:data3 encoding:NSUTF8StringEncoding];
-    NSLog(@"Average Bike Speed: %@",ret3);
+    NSString *get_speed = [[NSString alloc] initWithData:data3 encoding:NSUTF8StringEncoding];
+    NSLog(@"Average Bike Speed: %@",get_speed);
     
-    _bike_speed_label.text = ret3;
+    _bike_speed_label.text = get_speed;
     
     NSURL *url4 = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/mp-get-time.php?ccid=%@",ccid]];
     NSData *data4 = [NSData dataWithContentsOfURL:url4];
@@ -55,7 +55,7 @@
     
     _bike_time.text = bike_time_string;
     
-    float speed = [ret3 floatValue];
+    float speed = [get_speed floatValue];
     
     float miles = speed * bike_time;
     NSLog(@"Miles Traveled: %f",miles);
