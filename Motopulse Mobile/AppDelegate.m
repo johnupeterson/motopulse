@@ -18,6 +18,7 @@ NSString *motion_sensitivity;
 NSString *ride_tracking;
 NSString *voice_crash_setting;
 NSString *voice_motion_setting;
+NSString *silent_alarm;
 
 
 @interface AppDelegate ()
@@ -53,6 +54,8 @@ NSString *voice_motion_setting;
                      stringForKey:@"voice_crash_setting"];
     voice_motion_setting = [[NSUserDefaults standardUserDefaults]
                            stringForKey:@"voice_motion_setting"];
+    silent_alarm = [[NSUserDefaults standardUserDefaults]
+                            stringForKey:@"silent_alarm"];
     
     NSLog(@"CCID: %@",ccid);
     NSLog(@"Alarm: %@",moto_alarm);

@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *bike_speed_label;
 
 @property (weak, nonatomic) IBOutlet UILabel *miles_label;
+@property (weak, nonatomic) IBOutlet UILabel *top_speed_label;
 
 @end
 
@@ -63,6 +64,12 @@
     NSString *string_miles = [NSString stringWithFormat:@"%.02f", miles];
     _miles_label.text = string_miles;
     
+    
+    NSURL *url5 = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/mp-get-topspeed.php?ccid=%@",ccid]];
+    NSData *data5 = [NSData dataWithContentsOfURL:url5];
+    NSString *get_topspeed = [[NSString alloc] initWithData:data5 encoding:NSUTF8StringEncoding];
+    NSLog(@"Top Bike Speed: %@",get_topspeed);
+    _top_speed_label.text = get_topspeed;
     
     
     MKCoordinateRegion thisRegion = {{0.0,0.0}, {0.0,0.0}};

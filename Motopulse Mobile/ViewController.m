@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *voice_motion;
 @property (weak, nonatomic) IBOutlet UISwitch *crash_motion;
 @property (weak, nonatomic) IBOutlet UISwitch *record_ride_switch;
+@property (weak, nonatomic) IBOutlet UISwitch *silent_alarm_switch;
 
 
 @end
@@ -37,6 +38,13 @@
         
         if ([ride_tracking isEqual: @"0"]) {
             [_record_ride_switch setOn:NO animated:YES];}
+    
+    if ([silent_alarm isEqual: @"1"]) {
+        [_silent_alarm_switch setOn:YES animated:YES];}
+    
+    if ([silent_alarm isEqual: @"0"]) {
+        [_silent_alarm_switch setOn:NO animated:YES];}
+    
     
     
     if ([voice_crash_setting isEqual: @"1"]) {
@@ -380,6 +388,40 @@
         [tweetSheet setInitialText:@"Check out my latest Motopulse Stats"];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
+}
+- (IBAction)silent_alarm_action:(id)sender {
+    UISwitch *mySwitch = (UISwitch *)sender;
+    if ([mySwitch isOn]) {
+        NSLog(@"its on!");
+        
+        silent_alarm = @"1";
+        [[NSUserDefaults standardUserDefaults] setObject:silent_alarm forKey:@"silent_alarm"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-S1"]];
+        
+        
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"ret=%@", ret);
+    } else {
+        NSLog(@"its off!");
+        
+        silent_alarm = @"0";
+        [[NSUserDefaults standardUserDefaults] setObject:silent_alarm forKey:@"silent_alarm"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@",motopulse_number,@"&command=",security_code,@"-S0"]];
+        
+        
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"ret=%@", ret);
+    }
+    
+
 }
 
 @end
