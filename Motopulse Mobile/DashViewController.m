@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *miles_label;
 @property (weak, nonatomic) IBOutlet UILabel *top_speed_label;
+@property (weak, nonatomic) IBOutlet UILabel *location_time;
 
 @end
 
@@ -71,6 +72,33 @@
     NSLog(@"Top Bike Speed: %@",get_topspeed);
     _top_speed_label.text = get_topspeed;
     
+    NSURL *url6 = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/mp-get-locationtime.php?ccid=%@",ccid]];
+    NSData *data6 = [NSData dataWithContentsOfURL:url6];
+    NSString *get_location_time = [[NSString alloc] initWithData:data6 encoding:NSUTF8StringEncoding];
+    NSLog(@"Latest Time: %@",get_location_time);
+   
+    
+    //The input
+    NSString *myDateAsAStringValue = get_location_time;
+    
+    //create the formatter for parsing
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    [df setDateFormat:@"yyyy-MM-dd-HH:mm:ss"];
+    
+    //parsing the string and converting it to NSDate
+    NSDate *myDate = [df dateFromString: myDateAsAStringValue];
+    
+    //create the formatter for the output
+    NSDateFormatter *out_df = [[NSDateFormatter alloc] init];
+    [out_df setDateFormat:@"yyyy-MM-dd HH:mm:ss z"];
+    
+    //output the date
+    NSLog(@"the date is %@",[out_df stringFromDate:myDate]);
+    NSString *dateresult = [out_df stringFromDate:myDate];
+    
+    _location_time.text = dateresult;
+    
     
     MKCoordinateRegion thisRegion = {{0.0,0.0}, {0.0,0.0}};
     // thisRegion.center.latitude = 37.443832;
@@ -80,8 +108,8 @@
     
     
     CLLocationCoordinate2D coordinate;
-    coordinate.latitude = 37.443832;
-    coordinate.longitude = -122.264147;
+    coordinate.latitude = latdouble;
+    coordinate.longitude = londouble;
     
     thisRegion.center = coordinate;
     
@@ -108,5 +136,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)refresh:(id)sender {
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Dashboard"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

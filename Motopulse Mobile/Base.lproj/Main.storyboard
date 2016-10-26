@@ -1052,7 +1052,7 @@
         <!--Dashboard-->
         <scene sceneID="dfl-1o-bMD">
             <objects>
-                <viewController title="Dashboard" id="JGm-TY-CoK" customClass="DashViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Dashboard" title="Dashboard" id="JGm-TY-CoK" customClass="DashViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aIp-Mo-o3D"/>
                         <viewControllerLayoutGuide type="bottom" id="BLf-OC-Z6P"/>
@@ -1178,7 +1178,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOST RECENT BIKE LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="310-8F-Cj9">
-                                <rect key="frame" x="0.0" y="317" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="317" width="375" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.38039215686274508" green="0.38431372549019605" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
@@ -1210,15 +1210,32 @@
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="stZ-aS-5Ta">
-                                <rect key="frame" x="0.0" y="355" width="375" height="312"/>
+                                <rect key="frame" x="0.0" y="388" width="375" height="279"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fs-t3-jjD">
+                                <rect key="frame" x="0.0" y="353" width="375" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3803921569" green="0.38431372549999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ioh-dq-Dh6">
+                                <rect key="frame" x="53" y="31" width="43" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="refresh-24.png"/>
+                                <connections>
+                                    <action selector="refresh:" destination="JGm-TY-CoK" eventType="touchUpInside" id="opu-c1-AuK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="bike_speed_label" destination="Szm-UY-6P7" id="27R-9U-agH"/>
                         <outlet property="bike_time" destination="GXy-Vb-StM" id="a07-Oa-yNV"/>
+                        <outlet property="location_time" destination="3Fs-t3-jjD" id="yaB-Bm-rlc"/>
                         <outlet property="mapview" destination="stZ-aS-5Ta" id="rA4-iP-RGL"/>
                         <outlet property="miles_label" destination="Sis-GB-5YF" id="831-Jm-OPG"/>
                         <outlet property="top_speed_label" destination="ZsE-12-xnI" id="s1H-5S-Qu9"/>
@@ -1233,13 +1250,14 @@
         <image name="dashboard.png" width="30" height="30"/>
         <image name="facebook-share-icon.jpg" width="300" height="118"/>
         <image name="line.png" width="1" height="1"/>
+        <image name="refresh-24.png" width="24" height="24"/>
         <image name="remote.png" width="30" height="30"/>
         <image name="settings-5.png" width="30" height="30"/>
         <image name="tweet-button-2015.png" width="200" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ljf-Ra-Dh9"/>
+        <segue reference="JCI-GW-skO"/>
+        <segue reference="vSU-xs-heg"/>
         <segue reference="kbZ-Sn-8Pt"/>
-        <segue reference="UAs-ah-zLI"/>
     </inferredMetricsTieBreakers>
 </document>
