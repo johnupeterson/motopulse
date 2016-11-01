@@ -20,6 +20,7 @@
 		A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C92CC51DB7C56900A5BF9C /* dashboard.png */; };
 		A3FC67B81DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FC67B71DB58E6C00DDDBE1 /* motopulse_splashlogo_300.png */; };
 		A3FC67BB1DB59EE400DDDBE1 /* device_id.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FC67BA1DB59EE400DDDBE1 /* device_id.m */; };
+		BE304C931DC3D34600BF9027 /* motopulse_logo_300.png in Resources */ = {isa = PBXBuildFile; fileRef = BE304C921DC3D34600BF9027 /* motopulse_logo_300.png */; };
 		BEAF10CB1DAEF9FB008F1FFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10CA1DAEF9FB008F1FFC /* main.m */; };
 		BEAF10CE1DAEF9FB008F1FFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10CD1DAEF9FB008F1FFC /* AppDelegate.m */; };
 		BEAF10D11DAEF9FB008F1FFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF10D01DAEF9FB008F1FFC /* ViewController.m */; };
@@ -68,6 +69,7 @@
 		A3FC67B91DB59EE400DDDBE1 /* device_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = device_id.h; path = "Motopulse Mobile/device_id.h"; sourceTree = "<group>"; };
 		A3FC67BA1DB59EE400DDDBE1 /* device_id.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = device_id.m; path = "Motopulse Mobile/device_id.m"; sourceTree = "<group>"; };
 		A3FC67BC1DB5B2EA00DDDBE1 /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = globals.h; path = "Motopulse Mobile/globals.h"; sourceTree = "<group>"; };
+		BE304C921DC3D34600BF9027 /* motopulse_logo_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = motopulse_logo_300.png; path = ../../../../../../motopulse_logo_300.png; sourceTree = "<group>"; };
 		BEAF10C61DAEF9FB008F1FFC /* Motopulse Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motopulse Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAF10CA1DAEF9FB008F1FFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEAF10CC1DAEF9FB008F1FFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		BEAF10C91DAEF9FB008F1FFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE304C921DC3D34600BF9027 /* motopulse_logo_300.png */,
 				A3C92CC11DB7C23D00A5BF9C /* remote.png */,
 				A3C92CC31DB7C33000A5BF9C /* settings-5.png */,
 				BEAF11141DB44694008F1FFC /* back.png */,
@@ -322,6 +325,7 @@
 				A3C92CC41DB7C33000A5BF9C /* settings-5.png in Resources */,
 				A33096391DBE9CC60059BD07 /* tweet-button-2015.png in Resources */,
 				A3C92CC61DB7C56900A5BF9C /* dashboard.png in Resources */,
+				BE304C931DC3D34600BF9027 /* motopulse_logo_300.png in Resources */,
 				A330963D1DBEAB0C0059BD07 /* IMG_0005.PNG.jpg in Resources */,
 				A33096351DBE99FE0059BD07 /* FB_ShareIcon.jpg in Resources */,
 				BEAF11091DB194C1008F1FFC /* next-1.png in Resources */,
