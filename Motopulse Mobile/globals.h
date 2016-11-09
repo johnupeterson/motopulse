@@ -20,5 +20,6 @@ extern NSString *ride_tracking;
 extern NSString *voice_crash_setting;
 extern NSString *voice_motion_setting;
 extern NSString *silent_alarm;
+extern NSString *crash_setting;
 
 #endif /* globals_h */

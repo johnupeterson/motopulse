@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JGm-TY-CoK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JGm-TY-CoK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1400,7 +1400,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crash Dtection Sensitivity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-3D-JKH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crash Detection Sensitivity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-3D-JKH">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1452,6 +1452,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="crash_setting:" destination="28l-SH-bia" eventType="touchUpInside" id="dav-Ug-jKd"/>
                                     <action selector="save_crash_number:" destination="u4M-kj-Q4N" eventType="touchUpInside" id="iZC-a5-IWC"/>
                                     <action selector="save_device_id:" destination="28l-SH-bia" eventType="touchUpInside" id="jMu-BD-Ao5"/>
                                 </connections>
@@ -1469,13 +1470,14 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="acq-Mb-HzR" kind="show" id="t57-Sj-ii3"/>
+                                    <segue destination="acq-Mb-HzR" kind="show" id="b1U-eu-HFy"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="crash_setting" destination="CwA-G0-8Q5" id="HOU-tI-7ZQ"/>
                         <outlet property="device_id_form" destination="CwA-G0-8Q5" id="uai-cZ-trg"/>
                     </connections>
                 </viewController>
@@ -1494,8 +1496,8 @@
         <image name="tweet-button-2015.png" width="200" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="t57-Sj-ii3"/>
-        <segue reference="adG-yS-Dz1"/>
+        <segue reference="byw-4w-Hoa"/>
         <segue reference="Xvg-M9-NTM"/>
+        <segue reference="adG-yS-Dz1"/>
     </inferredMetricsTieBreakers>
 </document>

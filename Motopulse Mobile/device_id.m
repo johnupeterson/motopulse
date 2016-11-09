@@ -23,6 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *motion_sensitivity;
 
+@property (weak, nonatomic) IBOutlet UITextField *crash_setting;
 
 
 @end
@@ -255,6 +256,35 @@
     
     
      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reset Device To Factory Defaults" message:@"Crash Notification Number Set" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
+    
+    [alert show];
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Settings"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)crash_setting:(id)sender {
+    //Action For Save Button
+    _crash_setting.text = _crash_setting.text;
+    crash_setting = _crash_setting.text;
+    
+    
+    [[NSUserDefaults standardUserDefaults] setObject:crash_setting forKey:@"crash_setting"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
+    
+    NSLog(@"The saved value is: %@",_crash_setting.text);
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://voiceserver1.jarviswireless.com/motopulse-commands.php?phone=%@%@%@%@%@",motopulse_number,@"&command=",security_code,@"-T=",crash_setting]];
+    
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",ret);
+    
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Crash Detection Sensitivity" message:@"Command Sent To The Device" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil];
     
     [alert show];
     
